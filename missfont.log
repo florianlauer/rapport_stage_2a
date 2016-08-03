@@ -1,0 +1,11 @@
+mktextfm nxlmi
+mktextfm nxlmi
+mktextfm ntx-Regular-tlf-t1
+mktextfm ntx-Regular-tlf-t1
+mktexpk --mfmode / --bdpi 600 --mag 1+120/600 --dpi 720 LinLibertineT-tlf-sc-t1--base
+mktextfm nxlmi
+mktextfm nxlmi
+mktexpk --mfmode / --bdpi 600 --mag 1+120/600 --dpi 720 LinLibertineT-tlf-sc-t1--base
+mktexpk --mfmode / --bdpi 600 --mag 1+120/600 --dpi 720 LinLibertineT-tlf-sc-t1--base
+mktextfm nxlmi
+mktextfm nxlmi
