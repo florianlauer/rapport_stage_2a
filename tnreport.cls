@@ -10,9 +10,9 @@
 \RequirePackage[utf8]{inputenc}
 \RequirePackage[T1]{fontenc}
 %\RequirePackage{times}
-%\RequirePackage{libertine}
+\RequirePackage{libertine}
 %\RequirePackage{newtxtext}
-%\RequirePackage[libertine]{newtxmath}
+\RequirePackage[libertine]{newtxmath}
 
 \RequirePackage[svgnames]{xcolor}
 \RequirePackage{listings}
@@ -167,9 +167,9 @@
   {\reportProjectCustomer{}}
   {\ifbool{pi}
     {\reportIndustrialCustomer{}}
-  {Stage de fin d'études réalisé dans l'entreprise \reportCompany{}
+  {Stage de deuxième année réalisé dans l'entreprise \reportCompany{}
 
-    en vue de l'obtention du diplôme d'ingénieur de \reportSchool{}}}
+    }}
 
 \vfill
 \vfill
