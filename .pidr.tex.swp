@@ -43,9 +43,9 @@
 \addcontentsline{toc}{chapter}{Remerciements}
 
 {\em
-Je tiens tout d'abord à remercier Monsieur Alain Letullier, co-dirigeant pour m'avoir offert la possibilité d'effectuer ce stage, pour ses conseils et son soutien tout au long de ce stage. 
+Je tiens tout d'abord à remercier Monsieur Alain Letullier, co-dirigeant pour m'avoir offert la possibilité d'effectuer ce stage, pour ses conseils et son soutien tout au long de celui-ci. 
 
-Je remercie également Sébastien Albert, chef de projet, pour m'avoir confié des projets intéressants et variés pendant ce stage, ainsi que Benoît Bour, responsable informatique, pour ses conseils et sa disponibilité.
+Je remercie également Sébastien Albert, chef de projet et co-dirigeant, pour m'avoir confié des projets intéressants et variés pendant ce stage, ainsi que Benoît Bour, responsable informatique, pour ses conseils et sa disponibilité.
 
 Enfin, je tenais à remercier également le restant de l'équipe de Déclic Communication, Florence, Nathalie, Yannick, Alain et Florian pour m'avoir accueilli chaleureusement au sein de l'entreprise, et pour tous les échanges d'idées intéressants que vous avons pu avoir lors des différentes réunions.
 }
@@ -54,12 +54,12 @@ Enfin, je tenais à remercier également le restant de l'équipe de Déclic Comm
 \section*{Avant-propos}
 \addcontentsline{toc}{chapter}{Avant-propos}
 
-Le stage de 2ème année doit permettre aux élèves-ingénieurs de découvrir et pratiquer les techniques et outils utilisés dans les métiers de l’informatique et de la production industrielle et d’être confrontés aux contraintes temporelles, économiques et humaines associées. 
-Étant issu d’une classe préparatoire c’était pour ma part ma première expérience en entreprise en tant qu’informaticien, D’une durée de 6 à 10 semaines, c’est l'occasion de mettre en application certains acquis vus en cours aussi bien pour le côté technique que pour les méthodes de travail, mais aussi de se rendre compte des besoins réels en informatique en dehors du cadre scolaire.
+Le stage de 2ème année doit permettre aux élèves-ingénieurs de découvrir et pratiquer les techniques et outils utilisés dans les métiers de l’informatique et de la production industrielle mais aussi d’être confrontés aux contraintes temporelles, économiques et humaines associées. 
+Étant issu d’une classe préparatoire c’était pour ma part ma première expérience en entreprise en tant qu’informaticien. D’une durée de 6 à 10 semaines, c’est l'occasion de mettre en application certains acquis vus en cours aussi bien pour le côté technique que pour les méthodes de travail, mais également de se rendre compte des besoins réels informatiques en dehors du cadre scolaire.
 
 Ce stage est également un bon moyen de faire le point sur son orientation après le diplôme, car plusieurs choix s’offrent à nous. Recherche, grandes entreprises, startups, figurent au panel de choix et ce stage a été pour moi un moyen de découvrir le monde de l’entreprise.
 
-Tous mes collègues ont réussi dès le début à me mettre à l’aise, grâce à la réunion d’accueil habituelle organisée à l’arrivée d’un nouveau stagiaire, avec un tour de table où chacun à pu se présenter, succédé par une présentation générale de l’entreprise, des règles à respecter et des différents projets qui me seront attribués. J’ai ensuite été amené à mon poste de travail, dans une pièce appelé l’atelier, aux côtés des deux graphistes, et il a été mis à ma disposition un PowerMac G5 ainsi qu’un PC portable sous Windows 10, j’ai également reçu une adresse mail pour communiquer avec mes collègues : stagiaire@declic-communication.com.
+Tous mes collègues ont réussi dès le début à me mettre à l’aise. J'ai tout de suite été invité à une réunion d’accueil habituelle organisée à l’arrivée d’un nouveau stagiaire, avec un tour de table où chacun à pu se présenter, succédé par une présentation générale de l’entreprise, des règles à respecter et des différents projets qui me seront attribués. J’ai ensuite été amené à mon poste de travail, dans une pièce appelé l’atelier, aux côtés des deux graphistes, et il a été mis à ma disposition un PowerMac G5 ainsi qu’un PC portable sous Windows 10. J’ai également reçu une adresse mail pour communiquer avec mes collègues (stagiaire@declic-communication.com).
 
 
 
@@ -77,7 +77,7 @@ Tous mes collègues ont réussi dès le début à me mettre à l’aise, grâce 
 \setcounter{page}{1}
 
 \chapter{Introduction}
-Ce rapport présente les différents travaux que j’ai effectués lors de mon stage “technicien” de deuxième année à Télécom Nancy. Mon stage a été réalisé dans la société Déclic Communication, agence de publicité à Saint-Avold. Initialement, j’ai eu la liste de sujets suivante :
+Ce rapport présente les différents travaux que j’ai effectués lors de mon stage de niveau “technicien” de deuxième année à Télécom Nancy. Mon stage a été réalisé dans la société Déclic Communication, agence de publicité à Saint-Avold. Initialement, il a été convenu des sujets suivants :
 
 
 \begin{itemize}
@@ -90,7 +90,7 @@ Ce rapport présente les différents travaux que j’ai effectués lors de mon s
 \end{itemize}
 
 
-Par la suite il s’est avéré que ce programme subissent quelques petites modifications. Je vais donc organiser mon rapport en séparant les différents gros projets en plusieurs parties détaillées après avoir présenté l’entreprise, puis j’exposerai également les tâches plus brèves que j’ai réalisés et qui m’ont permis tout de même d’acquérir de nouvelles connaissances. Enfin, je terminerai avec un bilan du stage et de mes acquis et des quelques difficultés rencontrées.
+Par la suite il s’est avéré que ce programme subit quelques petites modifications. Je vais donc organiser mon rapport en séparant les différents gros projets en plusieurs parties détaillées après avoir présenté l’entreprise, puis j’exposerai également les tâches plus brèves que j’ai réalisés et qui m’ont permis tout de même d’acquérir de nouvelles connaissances. Enfin, je terminerai avec un bilan du stage, de mes nouveaux acquis et des quelques difficultés rencontrées.
 
 
 
@@ -115,7 +115,7 @@ Ses domaines d’expertises sont :
   
   \label{fig:localisation}
 \end{figure}
-Elle fonctionne dans une logique de résultat, c’est à dire qu’il faut impérativement satisfaire le client et dans les plus brefs délais, pour continuer de s’assurer une pérennité sur le marché. Une des priorités pour l’entreprise et la sécurisation des données et la confidentialité, pour s’assurer la confiance des clients.
+Elle fonctionne dans une logique de résultat, c’est à dire qu’il faut impérativement satisfaire le client et dans les plus brefs délais, pour continuer de s’assurer une pérennité sur le marché. Une des priorités pour l’entreprise et la sécurisation des données et la confidentialité, pour s’assurer la confiance de ses clients.
 Les 3 différents pôles sont les suivants :
 \begin{itemize}
 \item conseil en création et stratégie de communication
@@ -124,19 +124,19 @@ Les 3 différents pôles sont les suivants :
 \end{itemize}
 
 
-Le pôle de conseil en création et stratégie de communication est composé des deux dirigeants ainsi que de Florian Guichon, commercial et chef de projet. C’est le pôle qui coordonnes tous les projets dans le temps, qui s’assure que les travaux soient effectués à temps et qui prospecte également de nouveaux clients.
+Le pôle de conseil en création et stratégie de communication est composé des deux dirigeants ainsi que de Florian Guichon, commercial et chef de projet. C’est le pôle qui coordonne tous les projets dans le temps, qui s’assure que les travaux soient effectués à temps et qui prospecte également de nouveaux clients.
 
 
-Le pôle fabrication, logistique et administratif est composé des assistantes de production, qui gèrent par exemple les banques d’images et données informatiques, qui établissent le cahier des charges de la chaîne graphique, ou encore qui réalise le suivi commercial. Ce sont souvent elles qui sont concernées lorsqu’un client à un soucis où une requête à effectuer pour modifier un visuel.
+Le pôle fabrication, logistique et administratif est composé des assistantes de production, qui gèrent par exemple les banques d’images et données informatiques, qui établissent le cahier des charges de la chaîne graphique, ou encore qui réalise le suivi commercial des clients. Ce sont souvent elles qui sont concernées lorsqu’un client à un soucis où une requête à effectuer pour modifier un visuel ou le contenu d'un site internet.
 
 
-Enfin, le pôle de création, web design et solution internet est celui dans lequel j’ai effectué mon stage. Il est composé de 3 personnes : un graphiste, un infographiste et un informaticien. Les graphistes sont ceux qui réalisent les visuels (logos, affiches, prospectus…) à l’aide des logiciels de la suite Adobe (Photoshop, Illustrator et InDesign). Ceux sont également eux qui envoient le contenu graphique des sites web que Benoît Bour, le responsable informatique, réalisent souvent grâce au CMS Wordpress.
+Enfin, le pôle de création, web design et solution internet est celui dans lequel j’ai effectué mon stage. Il est composé de 3 personnes : un graphiste, un infographiste et un informaticien. Les graphistes sont ceux qui réalisent les visuels (logos, affiches, prospectus…) à l’aide des logiciels de la suite Adobe (Photoshop, Illustrator et InDesign). Ceux sont également eux qui envoient le contenu graphique des sites web que Benoît Bour, le responsable informatique, réalise souvent grâce au CMS Wordpress.
 
 
-Il faut savoir que ces pôles sont très interdépendants, en effet : lorsque qu’un client commande un nouveau produit, c’est très souvent tous les employés qui sont impliqués dans le projet. Il n’est pas rare que des gens des différents pôles réalisent des réunions.
+Il faut savoir que ces pôles sont très interdépendants, en effet : lorsque qu’un client commande un nouveau produit, c’est très souvent tous les employés qui sont impliqués dans le projet. Il n’est pas rare que des personnes des différents pôles réalisent des réunions enre elles.
 
 
-Dans l'environnement socio-économique actuel, l’entreprise migre à l’ère du numérique, les supports papiers se font un peu moins et les sites internet nécessitent beaucoup d’entretien. Du côté de sa stratégie de développement, l’entreprise fait du prospect dans la région, elle signe également les sites qu’elle réalise ce qui améliore sa visibilité, et possède un site internet pour mettre en valeur ses compétences, en affichant certains projets qui ont déjà été réalisés. 
+Dans l'environnement socio-économique actuel, l’entreprise migre à l’ère du numérique, les supports papiers se font moindres et les sites internet nécessitent beaucoup de maintenance. Du côté de sa stratégie de développement, l’entreprise fait du prospect dans la région, elle signe également les sites qu’elle réalise ce qui améliore sa visibilité, et possède un site internet pour mettre en valeur ses compétences et domaines d'expertise, en affichant certains projets qui ont déjà été réalisés. 
 
 \begin{figure}[h]
   \centering
@@ -150,12 +150,12 @@ Dans l'environnement socio-économique actuel, l’entreprise migre à l’ère 
 
 \section{Problématique}
 
-Il se trouve que l’entreprise possède un grand nombre de site qu’elle a réalisé et qu’elle héberge via des services externes comme OVH. Une des tâches coûteuse en temps mais qui s’avère bien pratique et la vérification de ces sites, celle ci est en général effectuée par les stagiaires lorsqu’ils arrivent dans l’entreprise. Cependant, ceux ci n’étaient pas très guidés dans leurs vérifications. On leur demande juste de vérifier les sites et de tester les formulaires présents puis d’envoyer un rapport par mail. Il m’a donc été demandé d’améliorer ce processus pour que les futurs stagiaires puissent aller plus vite pour faire un rapport plus précis sur les problèmes rencontrés.
+Il se trouve que l’entreprise possède un grand nombre de site qu’elle a réalisé et qu’elle héberge via des services externes comme OVH. Une des tâches coûteuse en temps mais qui s’avère bien pratique et la vérification de ces sites, celle-ci est en général effectuée par les stagiaires lorsqu’ils arrivent dans l’entreprise. Cependant, ils n’étaient pas très guidés dans leurs vérifications. On leur demandait juste de vérifier les sites et de tester les formulaires présents puis d’envoyer un rapport par mail. Il m’a donc été demandé d’améliorer ce processus pour que les futurs stagiaires puissent aller plus vite pour faire un rapport plus précis sur les problèmes rencontrés.
 
 
 \section{Réalisations}
 
-Dans un premier temps il m’a donc été demandé de faire moi même la vérification manuelle des 127 sites créés par l’entreprise, car c’est la meilleure des façons de comprendre comment améliorer le processus.
+Dans un premier temps il m’a donc été demandé de faire moi même la vérification manuelle des 127 sites créés par l’entreprise, car c’est la meilleure des façons pour comprendre comment améliorer le processus.
 Les erreurs ou problèmes que j’ai pu trouver étaient les suivants : 
 
 \begin{itemize}
@@ -175,18 +175,18 @@ Les erreurs ou problèmes que j’ai pu trouver étaient les suivants :
 \item erreur enregistrement contact.
 \end{itemize}
 
-Il a donc fallu prendre en compte tous ces problèmes pour améliorer le processus de test. Un des mes encadrants m’a ensuite demandé de faire des recherches pour savoir quels étaient les facteurs qui rendent un site performant, ainsi les résultats de cette recherche pourrait être incorporés dans le processus de test. Après avoir fait moi-même une analyse des informations qui se devaient être nécessaires lorsque je me rends sur un site, et des choses qui pouvaient faire en sorte que je n’y retourne plus, j’ai également effectué des recherches sur des sites internets fournissant des conseils à des entreprises pour améliorer le référencement de leur site et pour le rendre attractif. Après avoir fait le bilan des deux recherches, j’ai mis les informations en commun et les ai regroupé par thème : le fond, la forme et la technique, en séparant bien les différents moments avant, pendant et après la mise en service du site. Voir document intitulé “Les grandes étapes pour avoir un site web performant” en Annexe A.
+Il a donc fallu prendre en compte tous ces problèmes pour améliorer le processus de test. Un des mes encadrants m’a ensuite demandé de faire des recherches pour savoir quels étaient les facteurs qui rendent un site performant, ainsi les résultats de cette recherche pourraient être incorporés dans le processus de test. Après avoir fait moi-même une analyse des informations devant être nécessaires à mon sens lorsque je me rends sur un site, et des choses qui pouvaient faire en sorte que je n’y retourne plus, j’ai également effectué des recherches sur des sites internet fournissant des conseils à des entreprises pour améliorer le référencement de leur site et pour le rendre attractif. Après avoir fait le bilan des deux recherches, j’ai mis toutes les informations en commun et les ai regroupé par thème : le fond, la forme et la technique, en séparant bien les différents moments avant, pendant et après la mise en service du site. Voir document intitulé “Les grandes étapes pour avoir un site web performant” en Annexe A.
 
 
-Avec l’aide de ce document, j’ai commencé la rédaction d’un autre document qui serait donné aux futurs stagiaires lorsqu’ils arrivent, et qui les guidera durant les tests. J’ai alors séparé les tests en plusieurs parties : la technique, le fonctionnel, le contenu, et les performances. Voir document intitulé "Processus de vérification des sites" en Annexe B.
+Avec l’aide de ce document, j’ai commencé la rédaction d’un autre document qui sera donné aux futurs stagiaires lorsqu’ils arrivent, et qui les guidera durant les tests. J’ai alors séparé les tests en plusieurs parties : la technique, le fonctionnel, le contenu, et les performances. Voir document intitulé "Processus de vérification des sites" en Annexe B.
 \begin{wrapfigure}{r}{6cm}
   \centering
   \includegraphics[width=5cm]{figures/html5css3}
   \caption{Logo de HTML et CSS}
   \label{fig:logo-html-css}
 \end{wrapfigure}
-Ensuite il m’est assez rapidement venu à l’idée de créer une interface web sous la forme d’un formulaire permettant de réaliser ces tests facilement et également d’afficher les résultats de manière claire, avec une fonctionnalité qui attribuera une note à un site donné en fonction de sa réussite au test : mon chef de projet avait également cette idée, du coup je n’ai pas perdu de temps pour commencer un aperçu papier de ce à quoi le formulaire pouvait ressembler. 
-Je l’ai ensuite fait relire par mes collègues pour qu’ils corrigent les quelques fautes et adaptent certains mots de vocabulaire au lecteur qui pouvait être en troisième par exemple.
+Ensuite il m’est assez rapidement venu à l’idée de créer une interface web sous la forme d’un formulaire permettant de réaliser ces tests facilement et également d’afficher les résultats de manière claire, avec une fonctionnalité qui attribuera une note à un site donné en fonction de sa réussite au test : mon chef de projet avait également cette idée, du coup je n’ai pas perdu de temps pour commencer un aperçu papier de ce à quoi le formulaire allait ressembler. 
+Je l’ai ensuite fait relire par mes collègues pour qu’ils corrigent les quelques fautes et adaptent certains mots de vocabulaire au lecteur qui peut être en classe de troisième par exemple.
 Une fois la version papier approuvée je me suis lancé dans le développement, et il a fallu tout d’abord faire des choix techniques.
 \begin{wrapfigure}{l}{6cm}
   \centering
@@ -205,7 +205,7 @@ J’ai également opté pour ces technologiques plutôt que d’autres car elles
 Pour faciliter la tâche sur la partie CSS, j’ai utilisé le framework MaterializeCSS qui permet d’avoir une interface épurée et claire, et qui s’adapte facilement à toutes les tailles d’écran. 
 Pour développer je me suis toujours servi d’Atom, qui est un éditeur de texte très performant et OpenSource.
 L’interface que j’ai réalisée est en deux pages, celle du formulaire et celle d’affichage des résultats. 
-A chaque envoi de formulaire, une ligne dans la base de données est créée avec les réponses fournies, et à chaque réponse un compteur de note et incrémenté plus ou moins, puis la note est rapportée sur 20. 
+A chaque envoi de formulaire, une ligne dans la base de données est créée avec les réponses fournies, et à chaque réponse un compteur de note est incrémenté plus ou moins, puis la note est rapportée sur 20. 
 
 
 Les facteurs que j’ai considérés avec le plus d’importance dans l’attribution de la note ont été : affichage correct du site, de ses images, de ses textes, ancienneté de la dernière publication, pages du site vides, une page d’accueil soignée et facilement compréhensible, rang du résultat d’une recherche Google (référencement).
@@ -222,14 +222,14 @@ Une fois l’outil terminé il a fallu le tester pour le déboguer, et je suis a
 
 \section{Résultats obtenus}
 
-Une fois la version stable obtenue, il fallait procéder à l’installation pour que tous mes collègues puissent utiliser l’outil sur leur poste. Nous avons donc opté pour l’intégrer sur l’intranet sur la forme d’un lien pratique. J’ai donc déposé mes fichiers sur un serveur FTP grâce à Filezilla, mais après test sur ce serveur, j’ai rencontré une erreur de MySQL (MySQLi, que j’utilise dans mon code, n’était pas encore disponible dans la version de MySQL du serveur). Pour éviter de changer mon code, on m’a donc proposé un autre serveur, plus récent cette fois, hébergé sur un Mac. Pour le transfert de fichier je n’ai pas pu utiliser Filezilla (incompatibilité Mac) j’ai donc utilisé le Mac que l’on m’a fourni au début du stage pour transférer les fichiers via la fonctionnalité d’échange de fichiers entre Mac, la seule chose à faire pour se connecter était de rentrer l’IP de Mac sur lequel on voulait se connecter. Il a fallu que je crée le base de donnée sur le serveur MAMP (Mac Apache MySQL PHP) du Mac, et ensuite mon formulaire était accessible sur toutes les machines de l’entreprise. Dans un dernier temps il m’a été demandé de tester mon outil avec quelques sites récents réalisés par l’entreprise afin de s’assurer qu’ils auraient de bonnes notes, chose réussie vu qu’ils ont tous eu des notes supérieures à 16/20.
+Une fois la version stable obtenue, il fallait procéder à l’installation pour que tous mes collègues puissent utiliser l’outil sur leur poste. Nous avons donc opté pour l’intégrer sur l’intranet sur la forme d’un lien pratique. J’ai donc déposé mes fichiers sur un serveur FTP grâce à Filezilla, mais après test sur ce serveur, j’ai rencontré une erreur de MySQL (MySQLi, que j’utilise dans mon code, n’était pas encore disponible dans la version de MySQL du serveur). Pour éviter de changer mon code, on m’a donc proposé un autre serveur, plus récent cette fois, hébergé sur un Mac. Pour le transfert de fichier je n’ai pas pu utiliser Filezilla (incompatibilité Mac) j’ai donc utilisé le Mac que l’on m’a fourni au début du stage pour transférer les fichiers via la fonctionnalité d’échange de fichiers entre Mac, la seule chose à faire pour se connecter était de rentrer l’IP de Mac sur lequel on voulait se connecter. Il a fallu que je crée le base de donnée sur le serveur MAMP (Mac Apache MySQL PHP) du Mac, ensuite mon formulaire était accessible sur toutes les machines de l’entreprise. Dans un dernier temps il m’a été demandé de tester mon outil avec quelques sites récents réalisés par l’entreprise afin de s’assurer qu’ils auraient de bonnes notes, chose réussie car ils ont tous eu des notes supérieures à 16/20. (Voir Annexe C pour les images de l'outil)
 
 
 
 \chapter{Recherches dans le cadre de l’automatisation de mise à jour d’une base de données Wordpress}
 
 \section{Problématique}
-La communauté des communes de la Warndt a commandé un site internet permettant de présenter les projets, et évènements dans leurs communes, mais surtout pour répertorier les différentes entreprises et associations qu’elle possède. Le site étant déjà terminé et réalisé sur Wordpress à l’aide du thème directory, permettant d’associer à des objets de type Entreprise des adresses sur une carte Google Map. La base de données contient environ 400 entreprises et associations, toutes ont été insérées manuellement via l’interface d’administration de Wordpress, à partir de fichiers Excel les répertoriant. Le client a alors suggéré à mon entreprise qu’une solution permettant la mise à jour automatique du site (et donc de la base de données) à partir de modifications dans le fichier Excel pourrait être pratique. Or par manque de temps à y consacrer le responsable informatique n’a pas pu faire beaucoup de recherches dessus, et j’ai été affecté à cette tâche.
+La communauté des communes de la Warndt a commandé un site internet permettant de présenter les projets, et évènements dans leurs communes, mais surtout pour répertorier les différentes entreprises et associations qu’elle possède. Le site est déjà terminé et réalisé sur Wordpress à l’aide du thème directory, permettant d’associer à des objets de type Entreprise des adresses sur une carte Google Map. La base de données contient environ 400 entreprises et associations, toutes ont été insérées manuellement via l’interface d’administration de Wordpress, à partir de fichiers Excel les répertoriant. Le client a alors suggéré à mon entreprise qu’une solution permettant la mise à jour automatique du site (et donc de la base de données) à partir de modifications dans le fichier Excel pouvait s'avérer être pratique. Or par manque de temps à y consacrer le responsable informatique n’a pas pu faire beaucoup de recherches dessus, et j’ai donc été affecté à cette tâche.
 
 \section{Réalisations}
 
@@ -251,8 +251,8 @@ Les informations utiles affichées étaient les suivantes :
 \item Adresse complète
 \item Type d’entreprise si c’en est une
 \end{itemize}
-Après avoir effectué des recherches, j’ai conclu que la meilleure des façons de dialoguer entre un fichier Excel et une base de données étaient les fichiers CSV. Ce sont des fichiers qui contiennent sur chaque ligne des caractères séparés par une virgule, correspondant aux différentes colonnes du fichier Excel.
-Cependant, le type d’entreprise, l’adresse, le numéro de téléphone du contact, son mail, étaient stockés sous la forme d’une chaîne de caractère appelé tableau sérialisé que j'ai un peu réduit (voir ci-dessous).
+Après avoir effectué des recherches, j’ai conclu que la meilleure des façons pour dialoguer entre un fichier Excel et une base de données étaient les fichiers CSV. Ce sont des fichiers qui contiennent sur chaque ligne des caractères séparés par une virgule, correspondant aux différentes colonnes du fichier Excel.
+Cependant, le type d’entreprise, l’adresse, le numéro de téléphone du contact, et son mail, étaient stockés sous la forme d’une chaîne de caractère appelé tableau sérialisé (voir ci-dessous version réduite).
 
 \clearpage
 
@@ -337,14 +337,14 @@ Je suis parvenu à générer le tableau sérialisé final. L’essentiel de mon 
 \section{Résultats obtenus}
 Au final, et avec la contraite de temps d'une semaine que je me suis fixée, pour pouvoir réaliser les autres tâches j'ai uniquement réussi à remplir les tables posts et post\_meta, il me manquait encore 3 autres tables minimum pour terminer le travail. Mon chef de projet a donc informé au client qu’il aurait fallu beaucoup plus de temps et quelqu’un de très expérimenté en SQL pour réaliser cette tâche en entier.
 
-\chapter{Le projet du château de Saint Sixte}
+\chapter{Le projet pour le château de Saint Sixte}
 
 \section{Problématique}
-Un châtelain possédant un château à Freistroff réalisait souvent des visites de son château pour des classes des différentes écoles de Moselle, et il a décidé de rendre ses visites plus interactives en ajoutant une touche de numérique. En effet, il souhaitait que ses visiteurs puissent se connecter sur un réseau wifi non connecté à internet dans le domaine du château afin d’accéder à un site décrivant les différents lieux cultes du château. Il souhaitait également intégrer un quizz sur ce site mobile avec des questions relatives à la visite. Mon collègue informaticien à donc réalisé un site Wordpress responsive suivant ce cahier des charges, et acheté le matériel nécessaire à l’installation dans le château (Mac pour héberger le site, routeur et antenne wifi longue portée). Le site doit être disponible en français, allemand, et anglais.
+Un châtelain possédant un château à Freistroff réalisait souvent des visites de son château pour des établissements scolaires de Moselle, et il a décidé de rendre ses visites plus interactives en ajoutant une touche de numérique. En effet, il souhaitait que ses visiteurs puissent se connecter sur un réseau wifi deconnecté d'internet dans le domaine du château afin d’accéder à un site décrivant les différents lieux cultes du château. Il souhaitait également intégrer un quizz sur ce site mobile avec des questions relatives à la visite. Mon collègue informaticien à donc réalisé un site Wordpress responsive suivant ce cahier des charges, et acheté le matériel nécessaire à l’installation dans le château (Mac pour héberger le site, routeur et antenne wifi longue portée). Le site a une version dans les langues suivantes : français, allemand, et anglais.
 
 \section{Réalisations}
 
-Une de mes premières tâches pour ce projet a été l’ajout d’un bouton page précédente sur chaque page du site à la demande du client. Ensuite, j’ai ajouté les pages relatives aux langues étrangères car celle ci n’étaient pas encore créées. C’est le client lui même qui se chargerait des traductions du contenu. Lors de cette tâche j’ai du éditer des liens qui n’étaient plus adaptés lors de l’ajout des pages allemandes et anglaises (ajout de /en/ ou /de/). Ensuite j’ai fait en sorte que le serveur MAMP installé sur le Mac se lance automatiquement au démarrage grâce à un petit script en AppleScript pour gagner en efficacité et éviter au client de le faire à chaque fois.
+Une de mes premières tâches pour ce projet a été l’ajout d’un bouton page précédente sur chaque page du site à la demande du client. Ensuite, j’ai ajouté les pages relatives aux langues étrangères car celle ci n’étaient pas encore créées. C’est le client lui même qui se chargerait des traductions du contenu. Lors de cette tâche j’ai du éditer des liens qui n’étaient plus adaptés lors de l’ajout des pages en allemand et en anglais (ajout de /en/ ou /de/). Ensuite j’ai fait en sorte que le serveur MAMP installé sur le Mac se lance automatiquement au démarrage grâce à un petit script en AppleScript pour gagner en efficacité et éviter au client de le faire à chaque fois.
 
 
 Une fois le contenu et les pages terminés, il a fallu commencer les tests de connexion au réseau local du Mac avec des téléphones mobiles.
@@ -361,29 +361,29 @@ Une fois le contenu et les pages terminés, il a fallu commencer les tests de co
 
 Alors que mes collègues possédant des iPhone ne possédaient aucun problèmes pour se connecter au localhost (à l’adresse IP) du Mac hébergeant le site web, mon téléphone Android ainsi que tous les autres sur cet OS n’y parvenaient pas. Il s'ensuit alors une longue série de tests, de changement de paramètres de configuration du routeur, de l’antenne, mais en vain. Il était impossible de se connecter à un réseau wifi ne possédant pas internet avec un téléphone Android. J’ai donc fait des recherches et trouvé des articles récents expliquant que c’était dû à une mise à jour après la version 5 d’Android : en effet, quand le réseau wifi n’a pas d’accès internet, le téléphone va tenter de se connecter avec le réseau mobile (4G) ce qui est impossible pour atteindre une IP locale. (Voir Webographie)
 
-J’ai également fait des analyses de paquets avec Wireshark car mon téléphone avait bien une IP qui lui était affectée, et en filtrant les échanges avec uniquement mon IP je me suis aperçu que les seuls échanges avec le routeur étaient des protocoles IGMPv2 (Internet Group Management Protocol) et MDNS (Multicast Domain Name System) mais après avoir analysé plus en détail le contenu de ces paquets il s’est avéré qu’il s’agissait uniquement des tentatives de connexion au PlayStore dans le but des vérifications des mise à jour des applications. J’ai posé mon problème sur le site StackoverFlow et l’unique solution que j’ai reçue était d’utiliser l’outil Ngrok. C’est un petit script qui réalise un tunnel à partir d’internet vers le port de mon choix sur ma machine locale. Plus concrètement, il permet de partager son localhost à des utilisateurs lambdas via un URL généré automatiquement et hébergé en ligne. Or, à chaque fois que le script est lancé, l’URL est différent, de plus, le but était d’être indépendant d'internet. 
+J’ai également fait des analyses de paquets avec Wireshark car mon téléphone avait bien une IP qui lui était affectée, et en filtrant les échanges avec uniquement mon IP je me suis aperçu que les seuls échanges avec le routeur étaient des protocoles IGMPv2 (Internet Group Management Protocol) et MDNS (Multicast Domain Name System) mais après avoir analysé plus en détail le contenu de ces paquets il s’est avéré qu’il s’agissait uniquement des tentatives de connexion au PlayStore dans le but des vérifications des mise à jour des applications. J’ai posé mon problème sur le site Stackoverflow et l’unique solution que j’ai reçue était d’utiliser l’outil Ngrok. C’est un petit script qui réalise un tunnel à partir d’internet vers le port de mon choix sur ma machine locale. Plus concrètement, il permet de partager son localhost à des utilisateurs lambdas via un URL généré automatiquement et hébergé en ligne. Or, à chaque fois que le script est lancé, l’URL est différent, de plus, le but était d’être indépendant d'internet. 
 
 
 Après avoir passé plusieurs jours dans les recherches et sans obtenir de réponses, mon chef de projet a proposé de ramener le matériel à un employé de l’entreprise qui avait vendu l’antenne wifi, spécialiste du réseau. Après quelques jours, j’ai récupéré le matériel et appris qu’il avait configuré un serveur DNS sur une machine virtuelle Debian. (Voir Webographie)
 
 
-Il m’a expliqué qu’il suffisait de lancer la machine virtuelle pour que tout fonctionne. Or, cela n’a pas fonctionné directement, j’ai donc utilisé Teamviewer couplé au téléphone pour tenter de régler le soucis. Il s’est avéré qu’il avait oublié de supprimer des anciens fichiers après ses premiers tests qui étaient en conflit avec la configuration actuelle.
+Il m’a expliqué qu’il suffisait de lancer la machine virtuelle pour que tout fonctionne. Or, cela n’a pas fonctionné directement, j’ai donc utilisé Teamviewer couplé au téléphone pour tenter de régler le soucis. Il s’est avéré qu’il avait oublié de supprimer des anciens fichiers après ses premiers tests qui étaient en conflit avec la configuration actuelle du serveur DNS.
 
 
-Une fois ce problème résolu, j’ai testé la connexion avec mon téléphone Android, mais cela fonctionnait uniquement avec un port Ethernet du routeur connecté à internet. En rappelant l’expert en réseau, je l’ai informé sur les recherches que j’ai faites et il n’a pas été étonné par mes trouvailles. Je l’ai donc expliqué à mon chef de projet, et après concertation nous avons dû imposer une connexion internet au client pour un fonctionnement correct de l’installation.
+Une fois ce problème résolu, j’ai testé la connexion avec mon téléphone Android, mais cela fonctionnait uniquement avec un port Ethernet du routeur connecté à internet. En rappelant l’expert en réseau, je l’ai informé sur les recherches que j’avais effectuées et il n’a pas été étonné par mes trouvailles. Je l’ai donc expliqué à mon chef de projet, et après concertation nous avons dû imposer une connexion internet au client pour un fonctionnement correct de l’installation.
 
 
 Enfin, quelques jours plus tard, je suis allé au château avec mon collègue pour installer tout le matériel, nous avons pu nous connecter à une livebox. Après un problème de conflit d’IP (les IP du Mac, routeur et de l’antenne étant manuelles et initialement prévues en 192.168.1.1 pour un fonctionnement hors ligne) nous avons changé rapidement l’IP de la livebox, et pu faire fonctionner le site internet sur tous les types de mobile se connectant à l’antenne wifi.
 
 
 \section{Résultats obtenus}
-C’était le projet auquel j’ai participé pendant le plus de temps, le fil conducteur de mon stage et j’ai pu participer au dénouement de celui ci peu avant la fin de mon stage, ce qui m’a vraiment soulagé après les déboirs et incompréhensions que j’ai rencontrés lors de mes recherches et tests. Il m’a permis de me rendre compte des contraintes techniques qu’il fallait parfois imposer à un client, et des imprévus que l’on peut rencontrer lorsqu’on fait une installation en réseau local, en effet mes collègues n’avaient pas pensé passer autant de temps sur ce projet. Cela a été aussi un bon moyen pratique d’améliorer mes connaissances en réseau.
+C’était le projet auquel j’ai participé pendant le plus de temps, le fil conducteur de mon stage et j’ai pu participer au dénouement de celui-ci peu avant la fin de mon stage, ce qui m’a vraiment soulagé après les déboirs et incompréhensions que j’ai rencontrés lors de mes recherches et tests. Il m’a permis de me rendre compte des contraintes techniques qu’il fallait parfois imposer à un client, et des imprévus que l’on peut rencontrer lorsqu’on fait une installation en réseau local, en effet mes collègues n’avaient pas pensé passer autant de temps sur ce projet. Cela a été aussi un bon moyen pratique d’améliorer mes connaissances en réseau.
 
 \chapter{Etude dans le but d’une éventuelle migration de logiciel CRM}
 
 \section{Problématique}
 
-Mon entreprise possède un logiciel CRM (Costumer Relationship Management) appelé Logipub depuis maintenant plus de 20 ans, cependant, aucune mise à jour n’a été effectuée depuis une bonne dizaine d’années, et l’entreprise qui vend le logiciel n’est plus très à l’écoute de ses clients aujourd’hui. Par conséquent, il m’a été demandé de faire une étude des logiciels CRM existants, et plus précisément ceux gratuits et opensource. Le logiciel CRM permet à l’entreprise :
+Mon entreprise possède un logiciel CRM (Costumer Relationship Management) appelé Logipub depuis maintenant plus de 20 ans, cependant, aucune mise à jour n’a été effectuée depuis une bonne dizaine d’années, et l’entreprise qui vend le logiciel n’est plus très à l’écoute de ses clients aujourd’hui. Par conséquent, il m’a été demandé de faire une étude des logiciels CRM existants, et plus précisément ceux gratuits et opensource. Le logiciel CRM permet à mon entreprise :
 \begin{itemize}
 \item la gestion des dossiers
 \item la gestion des flux clients (devis, bons de livraison, factures)
@@ -400,7 +400,7 @@ Ce logiciel tourne en version serveur un PC et les Mac de mes collègues possèd
 
 \section{Réalisations}
 \subsection{Récupération des données}
-Un des premiers problèmes a été la récupération des données existantes (factures, contacts, devis, bons de livraison…) sur la base de données actuelles. C’est une base de données 4D, technologie apparue il y a plus de 25 ans, et qui aujourd’hui a une bien plus petite communauté de développeurs que SQL par exemple. Mon collègue Benoît m’a donc fourni tous les fichiers en sa possession sur le serveur contenant les données importantes. Lors de mes premières recherches assez générales, je me suis aperçu que très peu de forum relataient ce genre de récupération, ou alors les topics dataient d’il y a plus de 7 ans.
+Un des premiers problèmes a été la récupération des données existantes (factures, contacts, devis, bons de livraison…) sur la base de données actuelle. C’est une base de données 4D, technologie apparue il y a plus de 25 ans, et qui aujourd’hui a une bien plus petite communauté de développeurs que SQL par exemple. Mon collègue Benoît m’a donc fourni tous les fichiers en sa possession sur le serveur contenant les données importantes. Lors de mes premières recherches plutôt générales, je me suis aperçu que très peu de forums relataient ce genre de récupération, ou alors les topics dataient d’il y a plus de 7 ans.
 Ensuite, je me suis intéressé aux fichiers que j’avais en ma possession : les extensions étaient .4DD .4DR .4DS ; or voici les informations que j’ai trouvées sur internet :
 \begin{itemize}
 \item 4DB = c'est le "source" du développement, à conserver précieusement (structure de la base de données, écrans, code…)
@@ -408,20 +408,20 @@ Ensuite, je me suis intéressé aux fichiers que j’avais en ma possession : le
 \item 4DD = données, tout le travail de saisie des utilisateurs, à garder 
 \item 4DR = ressources du 4DD, aucun intérêt
 \end{itemize}
-J’avais donc bien un fichier de données, mais pas le fichier source qui permet d’avoir la structure de la base de données. J’ai donc relayé l’information à mon collègue en lui suggérant qu’il était peut être en la possession de la société qui leur a vendu le logiciel.
+J’avais donc bien un fichier de données, mais pas le fichier source qui permet d’avoir la structure de la base de données. J’ai donc relayé l’information à mon collègue en lui suggérant que ce fichier était peut être en la possession de la société qui leur a vendu le logiciel.
 
 
 \subsection{Comparatif des solutions actuelles de logiciels CRM}
 
-Ensuite, j’ai créé le tableau ci-dessous qui récapitule et compare les recherches que j’ai faites sur internet au sujet des logiciels gratuits existants. Il faut savoir que les certains ERP (Enterprise Resource Planning) sont liés aux CRM dans quelques cas : l’unique différence est qu’un CRM est orienté clients et propects, tandis que les ERP sont orientés gestion centralisée entre les différents départements de l’entreprise, mais les deux types de logiciels peuvent avoir des fonctionnalités en commun. (Voir tableaux en Annexe C)
+Ensuite, j’ai créé le tableau ci-dessous qui récapitule et compare les recherches que j’ai faites sur internet au sujet des logiciels gratuits existants. Il faut savoir que certains ERP (Enterprise Resource Planning) sont liés aux CRM dans quelques cas : l’unique différence est qu’un CRM est orienté clients et propects, tandis que les ERP sont orientés gestion centralisée entre les différents départements de l’entreprise, mais les deux types de logiciels peuvent avoir des fonctionnalités communes. (Voir tableaux en Annexe D)
 
 
 \subsection{Installation et tests du logiciel Dolibarr}
 
-Lors de ma première réunion à ce sujet avec Sébastien le chef de projet, il m’avait parlé de Dolibarr, qui est un CRM gratuit et opensource. Après mon étude comparative, nous en sommes venus à la conclusion que c’était celui le plus complet, il m’a donc proposé de le tester sur mon Mac.
+Lors de ma première réunion à ce sujet avec Sébastien le chef de projet, il m’a parlé de Dolibarr, qui est un CRM gratuit et opensource. Après mon étude comparative, nous en sommes venus à la conclusion que c’était celui le plus complet, il m’a donc proposé de le tester sur mon Mac.
 
 
-J’ai donc téléchargé un installateur qui fonctionne comme MAMP, car cet ERP est composé d’un serveur Apache et d’une base de données MySQL. Après configuration de la base de données, et du logiciel, auquel on accède via son localhost, j’ai commencé à prendre en main le logiciel (customisation de l’apparence du logiciel, création de clients, de factures, devis… Voir Annexe D). J’ai ensuite mis du temps à comprendre comment mettre à jour le logiciel ; le Mac étant assez ancien, l’installateur n’était disponible que dans une ancienne version. Il fallait extraire la version suivante de la version installée dans le fichier htdocs de Dolimamp (équivalent de MAMP dont j’ai parlé précédemment) en prenant soin de retirer le fichier install.lock chargé de bloquer les mises à jour inopinées par des utilisateurs ayant accès au dossier puis se reconnecter à son localhost pour avoir accès à la page de mise à jour. J’ai donc fait plusieurs mises à jour successives de la version 3.1 à 3.5 (une par une, 3.1 → 3.2 etc...). Il s’est avéré que la version 3.5 était la dernière compatible avec ma version de PHP, et que cette version de PHP était la dernière compatible avec mon Mac, je me suis donc arrêté à la 3.5.
+J’ai donc téléchargé un installeur qui fonctionne comme MAMP, car cet ERP est composé d’un serveur Apache et d’une base de données MySQL. Après configuration de la base de données, et du logiciel, auquel on accède via son localhost, j’ai commencé à prendre en main le logiciel (customisation de l’apparence du logiciel, création de clients, de factures, devis… Voir Annexe E). J’ai ensuite mis du temps à comprendre comment mettre à jour le logiciel ; le Mac étant assez ancien, l’installeur n’était disponible que dans une ancienne version. Il fallait extraire le fichier zip de la version suivante de celle installée dans le fichier htdocs de Dolimamp (équivalent de MAMP dont j’ai parlé précédemment) en prenant soin de retirer le fichier install.lock chargé de bloquer les mises à jour inopinées par des utilisateurs ayant accès au dossier puis se reconnecter à son localhost pour avoir accès à la page de mise à jour. J’ai donc fait plusieurs mises à jour successives de la version 3.1 à 3.5 (une par une, 3.1 → 3.2 etc...). Il s’est avéré que la version 3.5 était la dernière compatible avec ma version de PHP, et que cette version de PHP était la dernière compatible avec mon Mac, je me suis donc arrêté à la 3.5.
 
 
 \subsection{Comparatif entre Logipub et Dolibarr}
@@ -438,7 +438,7 @@ Une fois le logiciel Dolibarr testé, on m’a fait essayé le logiciel Logipub 
 
 \subsection{Que se passera t’il dans le cas d’un crash du logiciel Logipub ou d’un serveur ?}
 
-Alain, un des dirigeants m’a demandé de rédiger un rapport pour savoir ce qu’il se passerait si le logiciel Logipub ou son serveur crashait. Je suis donc allé demander des informations à mon collègue responsable de l’informatique pour obtenir davantage de précisions sur l’installation. J’ai donc appris que le serveur Xserve qui sert actuellement à l’échange des données lors des projets était équipé de la technologie RAID 1 (Redundant Array of Independent Disks) qui consiste à utiliser 2 disques durs sur les 4 existants afin d’avoir une copie permanente de ce qui est effectué, cela permet d’assurer la sécurité des données en cas de dégradation d’un disque.
+Alain, un des dirigeants m’a demandé de rédiger un rapport pour savoir ce qu’il se passerait si le logiciel Logipub ou un serveur crashait. Je suis donc allé demander des informations à mon collègue responsable de l’informatique pour obtenir davantage de précisions sur l’installation existante. J’ai donc appris que le serveur Xserve qui sert actuellement à l’échange des données lors des projets était équipé de la technologie RAID 1 (Redundant Array of Independent Disks) qui consiste à utiliser 2 disques durs sur les 4 existants afin d’avoir une copie permanente de ce qui est effectué, cela permet d’assurer la sécurité des données en cas de dégradation d’un disque.
 
 
 Par contre, il a été convenu avec mon collègue informaticien que si le logiciel Logipub venait à crasher, plus rien ne pouvait fonctionner. C’est pourquoi j’ai donc conseillé d’essayer de contacter encore et encore l’entreprise qui a vendu ce logiciel pour le mettre à jour sur un serveur plus récent équipé de cette technologie RAID avec une version plus récente du logiciel. J’ai également cité les meilleures façons d’anticiper un tel problème, il faut :
@@ -456,7 +456,7 @@ afin d’éviter :
 
 \section{Résultats obtenus}
 
-Après avoir faits ces multiples recherches, j’ai réalisé un mail bilan avec les solutions que je pouvais proposer que voici :
+Après avoir faits ces multiples recherches, j’ai réalisé un mail bilan avec les solutions que je pouvais proposer, les voici :
 
 \begin{itemize}
 \item Contacter Open Mac pour leur demander s’ils peuvent fournir le fichier structure. Cela ne résoudra pas le problème d’export et de sécurisation, il sera sûrement alors uniquement possible de “visionner” la base de données. Le mieux étant de leur demander s’ils ont déjà effectué une telle migration (vers base de données MySQL) par le passé, car aucune recherche Google spécifique à “migration base de données logipub” n’aboutit. Par contre une mise à jour de Logipub ne résoudra pas ce problème d’export.
@@ -468,14 +468,14 @@ Après avoir faits ces multiples recherches, j’ai réalisé un mail bilan avec
 \chapter{Développement d’un email responsive design}
 
 \section{Problématique}
-Une des activités de l’entreprise est de réaliser des campagnes d’emailing de publicité, c’est à dire qu’ils envoient grâce à un logiciel qu’il lit une base de données d’adresses email une grosse quantité d’emails pour des clients. Lors de mon stage, un des clients a demandé s’il était possible d’avoir un mail qui serait responsive c’est à dire où il n’y aurait pas besoin de zoomer lorsqu’on est sur un smartphone et qui s'adapterait à l’écran. C’est quelque chose qui n’avait jamais été fait auparavant par mes collègues, je me suis donc proposé de faire un essai et de leur montrer ce qui était faisable.
+Une des activités de l’entreprise est de réaliser des campagnes d’emailing de publicité. En fait, ils envoient grâce à un logiciel qu’il lit une base de données d’adresses email une grosse quantité d’emails pour des clients. Lors de mon stage, un des clients a demandé s’il était possible d’avoir un mail qui serait responsive c’est à dire où il n’y aurait pas besoin de zoomer lorsqu’on est sur un smartphone et qui s'adapterait à l’écran. C’est quelque chose qui n’avait jamais été fait auparavant par mes collègues, je me suis donc proposé de faire un essai et de leur montrer ce qui était faisable.
 
 \section{Réalisations}
 
 Il faut savoir qu’une publicité par email est tout simplement une page HTML accompagnée de propriétés CSS.
-J’ai donc téléchargé un template gratuit de mail responsive pour voir comment cela fonctionnait. L’astuce principale est d’utiliser des emboîtements de tableaux pour que si la page sur laquelle on affiche le mail est trop petite, le tableau qui est a droite passe en dessous.
+J’ai donc téléchargé un template gratuit de mail responsive pour voir comment cela fonctionnait. L’astuce principale est d’utiliser des emboîtements de tableaux pour que le tableau qui est a droite passe en dessous si la page sur laquelle on affiche le mail est trop petite.
 On m’a donc fourni un premier mail en format HTML assez simple pour me faire la main et j’ai réussi à faire en sorte qu’il soit responsive.
-Ensuite, on m’a donné le fichier Photoshop du mail du client qui aurait souhaité avoir une version responsive car il n’y avait pas encore de version HTML, ainsi que tous les visuels et la charte graphique (polices, couleurs). J’ai donc fait en sorte de reproduire dans le moindre détail cette image issue de Photoshop sur ma version HTML, que j’ai adaptée pour que ce soit responsive. Une autre astuce de celle des tableaux sont les medias queries (voir exemple ci-dessous) : ils permettent de définir des propriétés CSS pour une certaines largeurs d’écran. La plupart du temps je m’en suis servi pour qu’une div HTML prenne la largeur entière de l’écran une fois que la taille de l’écran est inférieure à la largeur du mail. 
+Ensuite, on m’a donné le fichier Photoshop du mail du client qui aurait souhaité avoir une version responsive car il n’y avait pas encore de version HTML, ainsi que tous les visuels et la charte graphique (polices, couleurs). J’ai donc fait en sorte de reproduire dans le moindre détail cette image issue de Photoshop sur ma version HTML, que j’ai adaptée pour que ce soit responsive. Une autre astuce de celle des tableaux sont les medias queries (voir exemple ci-dessous) : ils permettent de définir des propriétés CSS pour une certaine largeur d’écran. La plupart du temps je m’en suis servi pour qu’une div HTML prenne la largeur entière de l’écran une fois que la taille de l’écran est inférieure à la largeur du mail. 
 
 \newpage
 \begin{lstlisting}[language=html, caption={Exemple de media queries}, label={lst:mediaQuery}]
@@ -542,20 +542,21 @@ On peut voir les résultats que j’ai obtenus ci-dessous :
 Mais également à l’URL suivant : http://www.declic-communication.com/sites/aje/ajenews/
 
 
-J’étais plutôt satisfait des résultats que j’ai obtenus, mais j’arrivais à la fin de mon stage donc j’ai passé le flambeau à mon collègue Benoît en lui envoyant les fichiers que j’ai écris.
-Après un test d’emailing avec ce que j’ai réalisé il s’est avéré qu’il y avait encore des modifications car le corps d’un mail doit différer un peu d’une page internet, mais je n’ai pas pu l’aider davantage sur ce problème car mon stage arrivait à sa fin. Ensuite, il se chargera de créer un backoffice en PHP qui va permettre aux clients de eux mêmes réaliser leurs emails responsive en entrant juste les textes et en uploadant les images voulues pour les articles.
+J’étais plutôt satisfait des résultats que j’ai obtenus, cependant, j’arrivais à la fin de mon stage donc j’ai passé le flambeau à mon collègue Benoît en lui envoyant les fichiers que j’ai écris.
+Après un test d’emailing avec ce que j’ai réalisé il s’est avéré qu’il y avait encore des modifications à faire car le corps d’un mail doit différer un peu d’une page internet, mais je n’ai pas pu l’aider davantage sur ce problème, mon stage touchant à sa fin. Ensuite, il se chargera de créer un backoffice en PHP qui va permettre aux clients de eux mêmes réaliser leurs emails responsive en entrant juste les textes et en uploadant les images voulues pour les articles.
 
 
 \chapter{Bilan du stage}
-Globalement c’est plutôt un bilan positif que je retiens de ce stage, car il m’a permis de développer un grand nombre de nouvelles compétences, et m’a permis de mieux connaître le monde de l’entreprise. Bien que je ne sois parvenu à la fin d’une de mes tâches, j’ai permis à mon entreprise d’économiser du temps de recherches qui est souvent très difficile à trouver. J’ai réalisé un template d’email responsive qui sera sans doute réutilisé pour les prochaines campagnes d’emailing, et qui sera un plus à proposer pour les clients. J’ai participé activement à l’ensemble du projet sur le château de Saint Sixte, j’ai également réalisé un outil fonctionnel de vérification de sites et l’ai incorporé sur l’intranet de l’entreprise afin qu’il soit accessible de tous. J’ai permis d’informer au mieux les deux co-dirigeants dans l’hypothèse où un serveur ou le logiciel de CRM crashait, et leur ai transmis le fruit de mes recherches en terme de logiciels équivalents existants.
-Cependant, j’ai également réalisé un grand nombre de tâches secondaires qui ont pu s’avérer pratique pour l’entreprise et ma culture personnelle : 
+Globalement c’est plutôt un bilan positif que je retiens de ce stage, car il m’a permis de développer un grand nombre de nouvelles compétences, et m’a permis de mieux connaître le monde de l’entreprise. Bien que je ne sois parvenu à la fin d’une de mes tâches, j’ai permis à mon entreprise d’économiser du temps de recherche qui est souvent très difficile à trouver. J’ai réalisé un template d’email responsive qui sera sans doute réutilisé pour les prochaines campagnes d’emailing, et qui sera un plus à proposer pour les clients. J’ai participé activement à l’ensemble du projet pour le château de Saint Sixte, j’ai également réalisé un outil fonctionnel de vérification de sites et l’ai incorporé sur l’intranet de l’entreprise afin qu’il soit accessible de tous. J’ai permis d’informer au mieux les deux co-dirigeants dans l’hypothèse où un serveur ou le logiciel de CRM crashait, et leur ai transmis le fruit de mes recherches en terme de logiciels équivalents existants.
+Cependant, j’ai également réalisé un grand nombre de tâches secondaires qui ont pu s’avérer pratiques pour l’entreprise et ma culture personnelle : 
 \begin{itemize}
 \item réalisation de l’arborescence de l’intranet dans le but de supprimer les données vieilles et inutiles
-\item participation à des réunions créativité, débat sur des phrases d’accroche d’affiches dans le cadre du colloque national de l’association jeunes et entreprises : réalisation d’une équation du futur (thème du colloque : Equation du futur : jeunes et emploi) mathématique de façon avoir un sens mathématique (Voir Annexe E)
+\item participation à des réunions créativité, débat sur des phrases d’accroche d’affiches 
+\item dans le cadre du colloque national de l’association jeunes et entreprises : réalisation d’une équation du futur (thème du colloque : Equation du futur : jeunes et emploi) de façon avoir un sens mathématique (Voir Annexe F)
 \item estimations de biens informatiques dans le but d’un bilan des immobilisations
 \item remise à zéro, nettoyage d’un PC portable pour vente sur leboncoin.fr
 \item vérification du bon fonctionnement d’une galerie photo avant la livraison au client
-\item réalisation d’une liste des anciens sites réalisés par l’entreprise avec une apparence démodée
+\item réalisation d’une liste des anciens sites réalisés par l’entreprise avec une apparence quelque peu démodée
 \item rédaction d’un procédé pour éditer un fichier PDF gratuitement pour un client
 \item réalisation d’une étude sur les plateformes communautaires (notemment blablacar et airbnb)
 \item questions en anglais à l’auteur d’un thème Wordpress
@@ -566,7 +567,7 @@ Cependant, j’ai également réalisé un grand nombre de tâches secondaires qu
 
 \chapter{Conclusion}
 
-Ce stage a été pour moi un bon moyen de découvrir la polyvalence de chacun dans des structures inférieures à 10 personnes, car j’ai été moi même concerné : en effet, ce stage fût un mélange de recherches et de travaux pratiques, d’échanges avec les collègues et d’autonomie, de travaux intra-entreprise et de projets pour les clients. Je trouve que grâce à tout cela, ce stage a été encore plus enrichissant que prévu, car je ne m’attendais pas à tant de diversité dans mes tâches. J’ai pu ainsi améliorer mes compétences en développement web, mais aussi en recherche et développement et en réseau, chose qui aurait été difficile à espérer dans une grosse entreprise ou dans la recherche. J’ai également appris à bien prendre des notes lors des réunions, car lorsqu’on travaille sur plusieurs projets en parallèle il faut éviter de sans cesse questionner ses collègues parce qu’on a oublié quelque chose. Ce stage m’a également permis de me rendre compte du fonctionnement d’une société de services de type agence de publicité quand celle ci arrive à l’heure du numérique. Mais également qu’il faut s’adapter sans cesse aux clients et à la tendance actuelle pour ne pas perdre de clients ni d’efficacité sur le marché.
+Ce stage a été pour moi un bon moyen de découvrir la polyvalence de chacun dans des structures inférieures à 10 personnes, car j’ai été moi même concerné : en effet, ce stage fût un mélange de recherches et de travaux pratiques, d’échanges avec les collègues et d’autonomie, de travaux intra-entreprise et de projets pour les clients. Je trouve que grâce à tout cela, ce stage a été encore plus enrichissant que prévu, car je ne m’attendais pas à tant de diversité dans mes tâches. J’ai pu ainsi améliorer mes compétences en développement web, mais aussi en recherche et développement et en réseau, chose qui aurait été difficile à espérer dans une grosse entreprise ou dans la recherche. J’ai également appris à bien prendre des notes lors des réunions, car lorsqu’on travaille sur plusieurs projets en parallèle il faut éviter de sans cesse questionner ses collègues lorsque l’on a oublié quelque chose. Ce stage m’a également permis de me rendre compte du fonctionnement d’une société de services de type agence de publicité quand celle ci arrive à l’heure du numérique, mais également qu’il faut s’adapter sans cesse aux clients et à la tendance actuelle pour ne pas perdre de clients ni d’efficacité sur le marché.
 
 
 
@@ -589,6 +590,8 @@ Ce stage a été pour moi un bon moyen de découvrir la polyvalence de chacun da
 
 \textbf{FTP} - (File Transfert Protocol) Langage permettant l'échange de fichiers entre un serveur et un client.
 
+\textbf{Filezilla} - client FTP, FTPS et SFTP, développé sous la licence publique générale GNU.
+
 \textbf{Sérialisation} - Processus visant à encoder l'état d'un objet qui est en mémoire sous la forme d'une chaîne de caractères.
 
 \textbf{Responsive} - Manière de concevoir un site web pour que son contenu s'adapte automatiquement à la résolution écran du terminal qui est utilisé pour le visionner. 
@@ -610,7 +613,28 @@ Ce stage a été pour moi un bon moyen de découvrir la polyvalence de chacun da
 
 \textbf{Backoffice} - Partie du site internet qui n'est visible que par l'administrateur du site et qui permet de gérer le contenu, les fonctionnalités... 
 
+
 \textbf{SEO} - (Search Engine Optimization)  L'art de positionner un site, une page web ou une application dans les premiers résultats naturels des moteurs de recherche.
+
+
+\chapter*{Webographie}
+\addcontentsline{toc}{chapter}{Webographie}
+
+\textbf{Réalisation d'un serveur DNS sous Debian}
+
+http://www.informatiweb-pro.net/admin-systeme/linux/10--debian-ubuntu-installer-et-configurer-un-serveur-dns-bind.html
+
+\textbf{Forum sur les problèmes de connexion à un réseau LAN sous Android}
+
+
+https://code.google.com/p/android/issues/detail?id=79504
+
+
+http://stackoverflow.com/questions/28982225/android-local-server-access-over-wifi
+
+
+http://stackoverflow.com/questions/27164298/android-lollipop-defaults-to-mobile-data-when-wi-fi-has-not-internet-access
+
 
 \cleardoublepage
 \renewcommand{\thesubsection}{\Roman{subsection}}
@@ -625,6 +649,34 @@ Ce stage a été pour moi un bon moyen de découvrir la polyvalence de chacun da
 
 \chapter{Annexe : Processus de vérification des sites}
 \includepdf[pages={1-2}]{pdf/Processus_de_verification_des_sites.pdf}
+
+\chapter{Annexe : Screenshots de l'outil d'évaluation des performances des sites}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=18cm]{figures/form1}
+  \caption{Image 1}
+  \label{fig:form1}
+\end{figure}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=18cm]{figures/form2}
+  \caption{Image 2}
+  \label{fig:form2}
+\end{figure}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=18cm]{figures/form3}
+  \caption{Image 3}
+  \label{fig:form3}
+\end{figure}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=18cm]{figures/problems}
+  \caption{Résumé des problèmes}
+  \label{fig:problems}
+\end{figure}
+
 
 \chapter{Annexe : Tableaux comparatif des solutions actuelles de logiciels CRM}
 \begin{figure}[h]
@@ -697,7 +749,7 @@ Ce stage a été pour moi un bon moyen de découvrir la polyvalence de chacun da
 \section*{Résumé}
 \addcontentsline{toc}{chapter}{Résumé}
 Ce document présente le travail que j’ai effectué lors de mon stage de 2ème année à Télécom Nancy. Il s’est déroulé dans l’entreprise Déclic Communication à Saint-Avold, en Moselle et a duré 7 semaines. Mon rapport se divise en plusieurs grandes parties, qui correspondent aux tâches principales que j’ai réalisé. Dans la dernière partie, j’expose le bilan de ce stage ainsi que les difficultés rencontrées.
-Les tâches principales de mon stage ont été les projets suivants : la réalisation d’un processus de vérification des sites réalisés par l’entreprise, des recherches dans le cadre de l’automatisation de mise à jour d’une base de données Wordpress, le projet du château de Saint Sixte, une étude dans le but d’une éventuelle migration de logiciel CRM et le développement d’un email responsive design.
+Les tâches principales de mon stage ont été les projets suivants : la réalisation d’un processus de vérification des sites réalisés par l’entreprise, des recherches dans le cadre de l’automatisation de mise à jour d’une base de données Wordpress, le projet pour le château de Saint Sixte, une étude dans le but d’une éventuelle migration de logiciel CRM et le développement d’un email responsive design.
 
 
 {\bf Mots-clés : logiciel CRM, emailing responsive design, installation réseau LAN, mise à jour de BDD Wordpress}
