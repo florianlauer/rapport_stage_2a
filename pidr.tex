@@ -1,6 +1,7 @@
 \documentclass[report]{tnreport}
 %\documentclass[confidential,pidr]{tnreport} % If you are writing confidential report
 \usepackage{wrapfig}
+\usepackage{pdfpages}
 \def\reportTitle{Stage réalisé chez Déclic Communication} % Titre du mémoire
 \def\reportLongTitle{Stage réalisé chez Déclic Communication} % Titre plus long du mémoire
 
@@ -50,6 +51,17 @@ Enfin, je tenais à remercier également le restant de l'équipe de Déclic Comm
 }
 
 
+\section*{Avant-propos}
+\addcontentsline{toc}{chapter}{Avant-propos}
+
+Le stage de 2ème année doit permettre aux élèves-ingénieurs de découvrir et pratiquer les techniques et outils utilisés dans les métiers de l’informatique et de la production industrielle et d’être confrontés aux contraintes temporelles, économiques et humaines associées. 
+Étant issu d’une classe préparatoire c’était pour ma part ma première expérience en entreprise en tant qu’informaticien, D’une durée de 6 à 10 semaines, c’est l'occasion de mettre en application certains acquis vus en cours aussi bien pour le côté technique que pour les méthodes de travail, mais aussi de se rendre compte des besoins réels en informatique en dehors du cadre scolaire.
+
+Ce stage est également un bon moyen de faire le point sur son orientation après le diplôme, car plusieurs choix s’offrent à nous. Recherche, grandes entreprises, startups, figurent au panel de choix et ce stage a été pour moi un moyen de découvrir le monde de l’entreprise.
+
+Tous mes collègues ont réussi dès le début à me mettre à l’aise, grâce à la réunion d’accueil habituelle organisée à l’arrivée d’un nouveau stagiaire, avec un tour de table où chacun à pu se présenter, succédé par une présentation générale de l’entreprise, des règles à respecter et des différents projets qui me seront attribués. J’ai ensuite été amené à mon poste de travail, dans une pièce appelé l’atelier, aux côtés des deux graphistes, et il a été mis à ma disposition un PowerMac G5 ainsi qu’un PC portable sous Windows 10, j’ai également reçu une adresse mail pour communiquer avec mes collègues : stagiaire@declic-communication.com.
+
+
 
 
 
@@ -65,267 +77,637 @@ Enfin, je tenais à remercier également le restant de l'équipe de Déclic Comm
 \setcounter{page}{1}
 
 \chapter{Introduction}
+Ce rapport présente les différents travaux que j’ai effectués lors de mon stage “technicien” de deuxième année à Télécom Nancy. Mon stage a été réalisé dans la société Déclic Communication, agence de publicité à Saint-Avold. Initialement, j’ai eu la liste de sujets suivante :
 
-\section{Contexte du problème}
 
-La méthode Feldenkrais est une méthode inventée dans les années 1940 visant à faire prendre conscience aux pratiquants les mouvements de leur corps dans l’espace et dans l’environnement. Elle peut apporter plus de souplesse dans les articulations ainsi que la flexibilité de la colonne vertébrale, tout autant que de fournir une organisation plus aisée des mouvements dans la vie quotidienne ou durant une pratique sportive. Elle améliore donc la respiration, les mouvements et tous les muscles et articulations du corps humain. (source Wikipédia)
+\begin{itemize}
+\item étude changement de logiciel CRM, récupération et fusion avec nos bases de données existantes (PHP),
+\item programmation et développement informatique de projets clients,
+\item projet réalisation nouvel intranet Déclic (Optimisation et évolution de l’existant),
+\item analyse et optimisation SEO de sites clients,
+\item optimisation SEO et performances WordPress,
+\item et participation à la vie active de l’entreprise...
+\end{itemize}
 
-Il existe un site internet permettant de récupérer des leçons de la méthode Feldenkrais et qui a été réalisé par notre encadrant M. Latocha. Ce site dispose de fonctionnalités pour acheter une leçon ou un pack de leçons en ligne et les écouter par la suite sur son téléphone, ou sur son ordinateur. Cependant, cette méthode d’accès n’est pas la méthode la plus pratique pour les utilisateurs, car il peut s’avérer long de l’acheter puis ensuite de la télécharger.
 
-\section{Enjeux}
-
-Les objectifs essentiels de ce PIDR sont dans un premier temps de découvrir le domaine de la recherche, et ici, en quoi la recherche peut permettre de faire en sorte qu’une application soit motivante pour ses utilisateurs. Mais dans un deuxième temps, il était également demandé de réaliser un protoype sous la forme d’une webview, qui pourra être proposé aux utilisateurs de la méthode ; ceux-ci, par la suite pourraient nous transmettre les retours sur l’utilisation de l’application : les points positifs aussi bien que négatifs, pour en dégager des améliorations possibles. Un enjeu majeur sera que les pratiquants de la méthode puissent accéder à leurs leçons via un mobile ou une tablette -et donc, où ils veulent- car la pratique peut très bien se faire en extérieur ou alors souvent dans une salle n’ayant pas de poste informatique. Un autre enjeu important serait de pouvoir atteindre davantage d’utilisateurs. L’enjeu pour les pratiquants est donc la liberté de l’utiliser partout pour rendre la pratique beaucoup plus facile pour eux, mais également les rendre régulier dans leur pratique. L’objectif de notre encadrant est de faire partager la méthode Feldenkrais à un maximum de personne. Notre objectif personnel a été de réaliser une application mobile, car ce domaine nous intéresse et car nous n’avions jamais réalisé d’application mobile complète auparavant.
-
-\chapter{Analyse du problème}
-
-\section{Causes de la situation insatisfaisante}
-
-Il n’y a pas la possibilité d’écouter les leçons de la méthode Feldenkrais partout. De plus, les pratiquants peuvent être démotivés car les leçons sont longues et il est parfois difficile de trouver le temps de les réaliser, ou de penser à les réaliser par rapport au stress que peut apporter la vie active. Ces raisons rendent l’utilisation de cette méthode peu répandue, et réservée aux seules personnes qui la connaissent. La cause principale de cette situation est donc le manque de popularité de la méthode Feldenkrais car elle est très peu connue, relativement récente et a du mal à se démocratiser. Aussi les personnes qui l’utilisent peuvent la tester et et s’en lasser rapidement par la suite, car elles ne sont pas assez motivées pour continuer.
+Par la suite il s’est avéré que ce programme subissent quelques petites modifications. Je vais donc organiser mon rapport en séparant les différents gros projets en plusieurs parties détaillées après avoir présenté l’entreprise, puis j’exposerai également les tâches plus brèves que j’ai réalisés et qui m’ont permis tout de même d’acquérir de nouvelles connaissances. Enfin, je terminerai avec un bilan du stage et de mes acquis et des quelques difficultés rencontrées.
 
 
 
-\section{Recherche d’éléments de motivation au sein de l’application}
-
-Un point important de ce projet a été de rechercher des moyens de motiver les personnes à utiliser la méthode Feldenkrais. L’essentiel de la recherche associée à ce projet consiste en ce point. De nombreuses idées nous sont parvenues grâce à des réunions mettant en relation différentes expériences personnelles par rapport aux leviers de motivation rencontrés dans la vie de tous les jours.
-
-\subsection{La motivation dans les jeux vidéos}
-
-Nous avons commencé par comparer l’application à un jeu vidéo. En effet, un bon jeu vidéo et différencié d’un mauvais jeu vidéo par sa capacité à motiver le joueur à continuer celui-ci. On peut retrouver des jeux très difficiles, comme par exemple Dark Souls, qui poussent le joueur dans ces derniers retranchements mais qui leur font éprouver une grande satisfaction. On peut également trouver des jeux de construction qui nous motivent à continuer à construire pour finir notre projet, par exemple Minecraft. Ce dernier ne dispose pas de but particulier et le joueur peut donc en trouver lui même et réaliser ce qu’il a envie.
-
-Chamberlain identifie 4 archétypes de joueurs principaux: Les explorateurs, les sociaux, les leaders et les killers. Ce dernier ne sera pas exploités dans ce projet, car le principe des killers et réussir à devenir premier en descendant les autres joueurs, parfois à tout prix. Les explorateurs souhaitent découvrir tous les secrets, récupérer chaque objet possible pour les collectionner ou encore aller là où personne n’est encore allé. Ceux-ci seront à nouveau peu utilisé dans notre applications. Cependant, l’ajout de secrets permet en général de faire venir les utilisateurs sur une application, comme par exemples les secrets de Google ou Youtube. Les sociaux, eux, trouvent de l'intérêt à jouer à un jeu si ils peuvent interagir avec d’autres personnes. Il vont donc en général préférer les jeux en lignes massivement multijoueurs. Enfin, les leadeurs veulent arriver en haut du classement en effectuant les différentes actions pour progresser, gagner des points et battre les autres. Leur satisfaction provient de leur nom affichés à tous après un dur labeur pour progresser.
-
-\subsection{La motivation selon les géants du web}
-
-Après nous être penchés sur les jeux vidéos, nous nous sommes demandés pourquoi Facebook, Amazon ou encore Tinder et Snapchat sont autant utilisés de nos jours.
+\chapter{Présentation de l'entreprise}
 
 
-Quel sont les outils qu’utilisent ces géants de l’Internet pour amener toutes ces personnes à utiliser leurs site internet, et comment font ils pour les fidéliser ainsi?
+Comme cité précédemment, Déclic Communication est une agence de publicité localisée à Saint-Avold, en Moselle. On peut dire que la société créée, et fabrique tous supports de communication, en passant par les solutions internet comme les sites web. L’entreprise a été fondée il y a 32 ans par M. Alain Letullier qui aujourd’hui dirige l’entreprise aux côtés de M. Sébastien Albert. Au niveau juridique c’est une SARL (Société à Responsabilité Limitée), divisée en 3 pôles que je détaillerai ensuite, et composée de 8 employés.
+Ses domaines d’expertises sont :
+\begin{itemize}
+\item la stratégie de communication
+\item la communication digitale
+\item la communication et gestion événementielle
+\item la communication pédagogique.
+\end{itemize}
+
+
+\setlength{\belowcaptionskip}{5pt}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=13cm]{figures/map_plan}
+  \caption{Localisation de l'entreprise en Lorraine}
+  
+  \label{fig:localisation}
+\end{figure}
+Elle fonctionne dans une logique de résultat, c’est à dire qu’il faut impérativement satisfaire le client et dans les plus brefs délais, pour continuer de s’assurer une pérennité sur le marché. Une des priorités pour l’entreprise et la sécurisation des données et la confidentialité, pour s’assurer la confiance des clients.
+Les 3 différents pôles sont les suivants :
+\begin{itemize}
+\item conseil en création et stratégie de communication
+\item fabrication, logistique et administratif
+\item création, web design et solutions internet
+\end{itemize}
+
+
+Le pôle de conseil en création et stratégie de communication est composé des deux dirigeants ainsi que de Florian Guichon, commercial et chef de projet. C’est le pôle qui coordonnes tous les projets dans le temps, qui s’assure que les travaux soient effectués à temps et qui prospecte également de nouveaux clients.
+
+
+Le pôle fabrication, logistique et administratif est composé des assistantes de production, qui gèrent par exemple les banques d’images et données informatiques, qui établissent le cahier des charges de la chaîne graphique, ou encore qui réalise le suivi commercial. Ce sont souvent elles qui sont concernées lorsqu’un client à un soucis où une requête à effectuer pour modifier un visuel.
+
+
+Enfin, le pôle de création, web design et solution internet est celui dans lequel j’ai effectué mon stage. Il est composé de 3 personnes : un graphiste, un infographiste et un informaticien. Les graphistes sont ceux qui réalisent les visuels (logos, affiches, prospectus…) à l’aide des logiciels de la suite Adobe (Photoshop, Illustrator et InDesign). Ceux sont également eux qui envoient le contenu graphique des sites web que Benoît Bour, le responsable informatique, réalisent souvent grâce au CMS Wordpress.
+
+
+Il faut savoir que ces pôles sont très interdépendants, en effet : lorsque qu’un client commande un nouveau produit, c’est très souvent tous les employés qui sont impliqués dans le projet. Il n’est pas rare que des gens des différents pôles réalisent des réunions.
+
+
+Dans l'environnement socio-économique actuel, l’entreprise migre à l’ère du numérique, les supports papiers se font un peu moins et les sites internet nécessitent beaucoup d’entretien. Du côté de sa stratégie de développement, l’entreprise fait du prospect dans la région, elle signe également les sites qu’elle réalise ce qui améliore sa visibilité, et possède un site internet pour mettre en valeur ses compétences, en affichant certains projets qui ont déjà été réalisés. 
 
 \begin{figure}[h]
   \centering
-  %\includegraphics[width=17cm]{figures/topWebsites}
-  \caption{Quelques chiffres sur les géants du net}
-  \label{fig:top-sites}
+  \includegraphics[width=16cm]{figures/Organigramme}
+  \caption{Organigramme de travail}
+  
+  \label{fig:organigramme}
 \end{figure}
 
-Nous avons analysé les plus vastes sites internet mondiaux. Tout le monde les connaît ou en a déjà entendu parlé, à part peut-être Stackoverflow, qui est un forum d’entraide concentré sur la programmation dans tous les langages, et Steam, qui est une plate-forme de vente de jeux vidéos dématérialisés. Ces sites ont des points communs et des particularités que nous avons décortiqués afin d’en extraire des idées, tout en essayant à chaque fois de mesurer leur pertinence par rapport à notre application. Il en a résulté la figure suivante.
+\chapter{Processus de vérification des sites réalisés par l’entreprise}
+
+\section{Problématique}
+
+Il se trouve que l’entreprise possède un grand nombre de site qu’elle a réalisé et qu’elle héberge via des services externes comme OVH. Une des tâches coûteuse en temps mais qui s’avère bien pratique et la vérification de ces sites, celle ci est en général effectuée par les stagiaires lorsqu’ils arrivent dans l’entreprise. Cependant, ceux ci n’étaient pas très guidés dans leurs vérifications. On leur demande juste de vérifier les sites et de tester les formulaires présents puis d’envoyer un rapport par mail. Il m’a donc été demandé d’améliorer ce processus pour que les futurs stagiaires puissent aller plus vite pour faire un rapport plus précis sur les problèmes rencontrés.
 
 
-\begin{figure}[h]
-  \centering
-  %\includegraphics[width=17cm]{figures/site_idea}
-  \caption{Idées tirées des sites}
-  \label{fig:site-idea}
-\end{figure}
+\section{Réalisations}
 
-\subsection{Résultats de la recherche}
+Dans un premier temps il m’a donc été demandé de faire moi même la vérification manuelle des 127 sites créés par l’entreprise, car c’est la meilleure des façons de comprendre comment améliorer le processus.
+Les erreurs ou problèmes que j’ai pu trouver étaient les suivants : 
 
-Un concept important est la gratuité de l’application, au moins au début de l’utilisation ou pour son lancement. Si l’utilisateur doit payer pour y accéder, il aura moins tendance à l’essayer. Fournir un certain contenu gratuit dés son inscription est également un moyen de le motiver, et forcer un achat risque de faire fuir l’utilisateur. Il faut toujours attirer les utilisateurs et réussir à les fidéliser petit à petit pour leur montrer qu’ils ont besoin de l’application qu’ils utilisent.
+\begin{itemize}
+\item texte non lisible à cause d’un bouton trop petit
+\item problème d’affichage des caractères spéciaux
+\item envoi du formulaire de contact impossible
+\item cette page n’existe pas
+\item site actuellement en travaux
+\item mauvaise redirection de liens
+\item site non installé
+\item site non hébergé
+\item site en cours de réalisation
+\item erreur général de SQL
+\item page grise
+\item site en cours d’actualisation
+\item site en cours de refonte
+\item erreur enregistrement contact.
+\end{itemize}
 
-Dans la continuité de ce principe, on peut également offrir des cadeaux aux utilisateurs, ou des réductions qui arrivent petit à petit en fonction de leur fréquence d’utilisation de l’application. Ils seront ainsi plus motivés à continuer et obtenir ces réductions, même si au départ cela ne leur était pas indispensable.
-
-Une autre idée importante qu’on a pu dégager de ces sites internet est l’accomplissement de soi et la satisfaction personnelle que cela peut nous apporter. Internet met en contact des milliers de personnes et l’on peut aider les autres assez rapidement si on en a l’envie. Sans obligations, de nombreuses personnes vont aider les autres car cela leur fait juste plaisir.
-
-Les défis peuvent pousser les utilisateurs à se surpasser, et effectuer des tâches sans s’en rendre compte. On trouve ce principe dans les succès sur Steam, ces actions à effectuer dans un jeu qui n’apporte rien d’autre que la fierté d’avoir réussi à les réaliser. Cette idée est liée avec l’idée de grades et de points, permettant de mettre en confrontation les utilisateurs et les pousser à devancer les autres. Nous allons grâce à ces deux idées compléter les attentes des personnes correspondant aux archétypes des leaders et des explorateurs.
-
-\newpage
-\section{Fonctionnalités de l’application}
-
-
-Il nous a fallu organiser nos tâches par niveau de priorité afin de ne pas se perdre dans le code, c’est pourquoi nous avons fait cette carte heuristique, d’abord, sur un tableau à l’école, puis nous avons numérisé toutes ces idées.
-\begin{figure}[h]
-  \centering
-  %\includegraphics[width=17cm]{figures/vue_ensemble}
-  \caption{Carte heuristique de l'application}
-  \label{fig:ensemble-view}
-\end{figure}
+Il a donc fallu prendre en compte tous ces problèmes pour améliorer le processus de test. Un des mes encadrants m’a ensuite demandé de faire des recherches pour savoir quels étaient les facteurs qui rendent un site performant, ainsi les résultats de cette recherche pourrait être incorporés dans le processus de test. Après avoir fait moi-même une analyse des informations qui se devaient être nécessaires lorsque je me rends sur un site, et des choses qui pouvaient faire en sorte que je n’y retourne plus, j’ai également effectué des recherches sur des sites internets fournissant des conseils à des entreprises pour améliorer le référencement de leur site et pour le rendre attractif. Après avoir fait le bilan des deux recherches, j’ai mis les informations en commun et les ai regroupé par thème : le fond, la forme et la technique, en séparant bien les différents moments avant, pendant et après la mise en service du site. Voir document intitulé “Les grandes étapes pour avoir un site web performant” en Annexe A.
 
 
-\subsection{Écouter des mp3, achat et importation}
-
-La fonctionnalité primaire de l’application était bien évidemment d’écouter les mp3 des leçons de notre encadrant sur l’application. Cependant, les lecteurs de musiques réalisés avec Ionic n’étaient pas très exploitables (style non adapté, ou ne fonctionnaient pas) il a donc fallu en réalisé un “home made”. Comme les mp3 ne sont pas gratuits pour la plupart, il s’agissait aussi de pouvoir les acheter, nous avons donc réfléchi aux possibilités de paiement via une application et deux solutions étaient envisageables : Paypal, ou un paiement intégré à l’application passant par le Playstore (ou l’AppStore pour les utilisateurs d’iPhone).
-(import ???)
-
-\subsection{Retours sur les leçons, commentaires, contact}
-
-Ensuite, il était évident que l’application ait un coté social, pour que l’utilisateur puisse se sentir écouté, que la communauté soit active, et que certains des points de motivation soient bien présents. C’est pourquoi il est possible de laisser des commentaires sur leçons ainsi qu’une note entre 0 et 5. Aussi, sur le site déjà existant il était possible d’envoyer un mail à M. Latocha via la partie contact, et nous avons pensé qu’il était important que cette partie demeure présente sur l’application.  (confirmer quand sera fait ???)
-
-\subsection{Interactions entre les utilisateurs}
-
-Outre les commentaires, une idée primordiale selon nous pour rendre une application motivante était les échanges entre utilisateurs, avec la possibilité d’envoyer des messages privés ; les profils ne seraient alors pas anonymes et chaque utilisateur posséderait un compte personnel et une page profil (comme sur la plupart  des réseaux sociaux actuels).
-
-\subsection{Statistiques et objectifs}
-
-Une autre idée qui nous est venue à l’esprit était d’afficher des statistiques, car ils sont un moteur de la motivation ; en effet, un utilisateur qui voit qu’il a effectué un cours et observe une évolution de son graphique personnel, ainsi que l’augmentation d’un score qui lui serait attribué en fonction des heures qu’il passe à faire des cours, peut lui donner envie de pratiquer encore plus, ou de revenir chaque jour sur l’application.
-
-\subsection{Blog ou Forum}
-
-On arrive maintenant dans les fonctionnalités un peu plus facultatives, mais auxquelles on a pensé car une partie identique était déjà présente sur le site existant mais aussi car c’est le principe de base du site Stackoverflow. Le principe serait de remplir cette partie avec des topics contenant une question suivi d’une succession de réponses pouvant être écrites par tous les utilisateurs. Enfin, nous avons pensé à intégrer une carte sur l’application car la localisation est une option présente sur beaucoup de réseaux sociaux, et, dans notre cas, elle apporterait l’avantage de savoir qui pratique aussi le Feldenkrais autour de chez soi : les utilisateurs pourraient alors organiser des rencontres entre eux pour pratiquer ou débriefer sur des leçons.
-
-
-\subsection{Autres fonctionnalités}
-
-Dans les fonctionnalités également facultatives nous avons pensé à des cartes hexagonales pour présenter les cours, dans le style d’un jeu vidéo (les cours seraient une sorte de quête à accomplir pour avancer comme sur un plateau de jeu) et les couleurs des cours pourraient s’actualiser quand celui-ci est acheté, et ensuite accompli. Néanmoins c’est une tâche demandant beaucoup de boulot et cette fonctionnalité serait peu adaptée aux petits écrans.
-
-\chapter{Organisation}
-
-\section{Méthode de travail}
-
-Nous avons dans un premier temps défini les leviers de motivation que l’on voulait inclure dans l’application. Nous avons ratissé toutes les possibilités que l’on a pu imaginé durant cette période pour pouvoir avoir une vue globale de toute ce qui était utilisé. Nous avons ainsi pu choisir au mieux les principes à adopter. Nous avons ensuite sélectionner ceux qui nous paraissaient les plus pertinents. A partir de cette liste de critères, nous avons imaginé les fonctionnalités qui pouvait s’y appliquer. L'intérêt de cette méthode et de pouvoir savoir pour une fonctionnalité sera présente dans l’application plutôt qu’une autre, et ainsi savoir au mieux l’impact que celle-ci va avoir sur l’utilisateur. Ainsi, une liste de toutes les fonctionnalités principales a été crée. Celles-ci ont été ensuite regrouper dans différents groupes, en fonction du thème de celle-ci, et de son importance dans le projet. Nous voulions partir d’un noyau de base constitué des fonctionnalités les plus importantes. A ce noyau ce sont rattaché les autres fonctionnalités de moins en moins prioritaires. Ceci nous a donc permis de développer les fonctionnalités dans leur ordre d’importance et ainsi arriver petit à petit au prototype qui était prévu.
-
-\section{Technologies utilisées}
-
+Avec l’aide de ce document, j’ai commencé la rédaction d’un autre document qui serait donné aux futurs stagiaires lorsqu’ils arrivent, et qui les guidera durant les tests. J’ai alors séparé les tests en plusieurs parties : la technique, le fonctionnel, le contenu, et les performances. Voir document intitulé "Processus de vérification des sites" en Annexe B.
 \begin{wrapfigure}{r}{6cm}
   \centering
-  %\includegraphics[width=5cm]{figures/ionic}
-  \caption{Logo de Ionic}
-  \label{fig:logo-ionic}
+  \includegraphics[width=5cm]{figures/html5css3}
+  \caption{Logo de HTML et CSS}
+  \label{fig:logo-html-css}
 \end{wrapfigure}
-Le résultat qui était à fournir à l’issu de ce projet était un prototype d’application. Nous avons donc choisi des technologies permettant de réaliser rapidement un prototype qui fonctionne. Pour la partie application, nous avons utilisé Ionic. Cette technologie permet de programmer une application en utilisant les technologies du web, c’est à dire HTML, CSS et Angular.JS principalement. Elle est également gratuite et dispose une belle interface utilisateur. Elle est Open Source et son ergonomie ressemble grandement à une application native. De plus, sa communauté active permet la résolution rapide des problèmes rencontrés. Elle dispose de fonctionnalités natives qui y sont intégrées et est également compatible avec la technologie Cordova qui nous as permis de disposer de toutes les fonctionnalités natives d’Android, comme par exemple l’écoute de fichiers audios, qui est la fonctionnalité principale de l’application.
-
-\newpage
+Ensuite il m’est assez rapidement venu à l’idée de créer une interface web sous la forme d’un formulaire permettant de réaliser ces tests facilement et également d’afficher les résultats de manière claire, avec une fonctionnalité qui attribuera une note à un site donné en fonction de sa réussite au test : mon chef de projet avait également cette idée, du coup je n’ai pas perdu de temps pour commencer un aperçu papier de ce à quoi le formulaire pouvait ressembler. 
+Je l’ai ensuite fait relire par mes collègues pour qu’ils corrigent les quelques fautes et adaptent certains mots de vocabulaire au lecteur qui pouvait être en troisième par exemple.
+Une fois la version papier approuvée je me suis lancé dans le développement, et il a fallu tout d’abord faire des choix techniques.
 \begin{wrapfigure}{l}{6cm}
   \centering
-  %\includegraphics[width=6cm]{figures/node}
-  \caption{Logo de Node.JS}
-  \label{fig:logo-nodejs}
+  \includegraphics[width=5cm]{figures/wamp}
+  \caption{Logo de WAMP}
+  \label{fig:logo-wamp}
 \end{wrapfigure}
-Pour ce qui concerne le serveur, nous avons utilisé le langage Node.JS. Celui-ci permet d’avoir une API REST, c’est-à-dire un certain nombre d’URL correspondant chacune à une tache spécifique à effectuer, comme par exemple la création d’un élément ou la récupération de tous les éléments de la base de données. Ainsi, chaque fois que l’on envoie une requête au serveur, celui-ci va récupérer les données nécessaires, effectuer des traitements sur celles-ci et modifier la base de données s’il le faut, puis renvoyer le résultat au client, c’est-à-dire l’application mobile. Un avantage de ce principe de serveur et qu’il pourra tout aussi bien être utilisé dans une application mobile qu’un site web.
-\\
-\\
+J’ai opté pour des technologies basiques comme HTML, CSS pour le formulaire, MySQL pour la base de donnée ainsi que Apache pour le serveur et enfin PHP pour faire des pages web dynamiques, que j’ai installé avec WAMP (Windows Apache MySQL PHP).
+J’ai également opté pour ces technologiques plutôt que d’autres car elles étaient celles maîtrisées par Benoit le responsable informatique.
 \begin{wrapfigure}{r}{6cm}
   \centering
-  %\includegraphics[width=6cm]{figures/materialize}
+  \includegraphics[width=3cm]{figures/atom}
+  \caption{Logo d'Atom}
+  \label{fig:logo-html-css}
+\end{wrapfigure}
+Pour faciliter la tâche sur la partie CSS, j’ai utilisé le framework MaterializeCSS qui permet d’avoir une interface épurée et claire, et qui s’adapte facilement à toutes les tailles d’écran. 
+Pour développer je me suis toujours servi d’Atom, qui est un éditeur de texte très performant et OpenSource.
+L’interface que j’ai réalisée est en deux pages, celle du formulaire et celle d’affichage des résultats. 
+A chaque envoi de formulaire, une ligne dans la base de données est créée avec les réponses fournies, et à chaque réponse un compteur de note et incrémenté plus ou moins, puis la note est rapportée sur 20. 
+
+
+Les facteurs que j’ai considérés avec le plus d’importance dans l’attribution de la note ont été : affichage correct du site, de ses images, de ses textes, ancienneté de la dernière publication, pages du site vides, une page d’accueil soignée et facilement compréhensible, rang du résultat d’une recherche Google (référencement).
+Sur la page rapport, c’est toujours le dernier test en date pour un site donné qui sera affiché. En cliquant sur un site dans la liste des résultats, on peut voir le détail de ses problèmes, ainsi que d’éventuels commentaires de la personne qui a fait le test.
+\begin{figure}
+  \centering
+  \includegraphics[width=3cm]{figures/materialize}
   \caption{Logo de Materialize}
   \label{fig:logo-materialize}
-\end{wrapfigure}
+\end{figure}
 
-Grâce à ce serveur, nous avons pu développé, en plus de l’application mobile, une interface d’administration permettant à notre encadrant de créer et uploader les leçons sur le serveur et qui sont directement accessibles via l’application. Pour réaliser le design de cette partie d’administration, nous avons utilisé le framework materializecss. Celui-ci nous a permi de rendre l’interface épuré et clair, permettant ainsi de gérer au mieux les cours disponibles pour les utilisateurs.
-\\
-\\
-\\
-\begin{wrapfigure}{l}{6cm}
+Une fois l’outil terminé il a fallu le tester pour le déboguer, et je suis arrivé sur une version stable après quelques heures de débogguage.
+
+
+\section{Résultats obtenus}
+
+Une fois la version stable obtenue, il fallait procéder à l’installation pour que tous mes collègues puissent utiliser l’outil sur leur poste. Nous avons donc opté pour l’intégrer sur l’intranet sur la forme d’un lien pratique. J’ai donc déposé mes fichiers sur un serveur FTP grâce à Filezilla, mais après test sur ce serveur, j’ai rencontré une erreur de MySQL (MySQLi, que j’utilise dans mon code, n’était pas encore disponible dans la version de MySQL du serveur). Pour éviter de changer mon code, on m’a donc proposé un autre serveur, plus récent cette fois, hébergé sur un Mac. Pour le transfert de fichier je n’ai pas pu utiliser Filezilla (incompatibilité Mac) j’ai donc utilisé le Mac que l’on m’a fourni au début du stage pour transférer les fichiers via la fonctionnalité d’échange de fichiers entre Mac, la seule chose à faire pour se connecter était de rentrer l’IP de Mac sur lequel on voulait se connecter. Il a fallu que je crée le base de donnée sur le serveur MAMP (Mac Apache MySQL PHP) du Mac, et ensuite mon formulaire était accessible sur toutes les machines de l’entreprise. Dans un dernier temps il m’a été demandé de tester mon outil avec quelques sites récents réalisés par l’entreprise afin de s’assurer qu’ils auraient de bonnes notes, chose réussie vu qu’ils ont tous eu des notes supérieures à 16/20.
+
+
+
+\chapter{Recherches dans le cadre de l’automatisation de mise à jour d’une base de données Wordpress}
+
+\section{Problématique}
+La communauté des communes de la Warndt a commandé un site internet permettant de présenter les projets, et évènements dans leurs communes, mais surtout pour répertorier les différentes entreprises et associations qu’elle possède. Le site étant déjà terminé et réalisé sur Wordpress à l’aide du thème directory, permettant d’associer à des objets de type Entreprise des adresses sur une carte Google Map. La base de données contient environ 400 entreprises et associations, toutes ont été insérées manuellement via l’interface d’administration de Wordpress, à partir de fichiers Excel les répertoriant. Le client a alors suggéré à mon entreprise qu’une solution permettant la mise à jour automatique du site (et donc de la base de données) à partir de modifications dans le fichier Excel pourrait être pratique. Or par manque de temps à y consacrer le responsable informatique n’a pas pu faire beaucoup de recherches dessus, et j’ai été affecté à cette tâche.
+
+\section{Réalisations}
+
+Le site étant déjà en ligne, j’ai récupérer tous les fichiers du serveur pour en faire une copie sur mon PC portable et ainsi pouvoir faire les tests sans impacter le site existant. Pour les tests j’ai utilisé l’utilitaire WAMP que j’avais déjà installé sur mon ordinateur et permettant de créer le serveur et la base de données. Il me fallait alors dans un premier temps analyser la façon dont les entreprises étaient stockées dans la base, et ce fût un gros travail car le thème Wordpress sépare les données utiles dans un très grand nombre de tables différentes. 
+
+\begin{figure}[h]
   \centering
-  %\includegraphics[width=6cm]{figures/mariadb}
-  \caption{Logo de MariaDB}
-  \label{fig:logo-mariadb}
-\end{wrapfigure}
-
-Pour stocker les données de l’application, nous avons utilisé le système de gestion de base de données MariaDB. Celui-ci est Open Source et gratuit, et est utilisé par un grand pourcentage des sites internets car il est très répandu et sa communauté est grande et active. Afin de faire la liaison entre Node.JS et MariaDB, nous avons utilisé l’ORM Sequelize qui permet d’utiliser le principe d’Active Record qui lie ainsi tables de la base de données et objets en mémoire. Ainsi, une table de la base corresponds exactement à un objet sur lequel des fonctions de recherche ou de sauvegarde ont été rajoutées. Nous pouvons ainsi modifier ces objets et les sauvegarder directement dans la base de manière aisée et efficace. De plus, si nous avons une association entre plusieurs tables, l’objet correspondant possède également les méthodes pour récupérer les autres objets associès.
-
+  \includegraphics[width=13cm]{figures/Schema_BDD}
+  \caption{Schéma des tables importantes de la base de données}
+  
+  \label{fig:installation}
+\end{figure}
 
 
+Les informations utiles affichées étaient les suivantes :
+\begin{itemize}
+\item Nom de l’entreprise/association 
+\item Nom du contact 
+\item Adresse complète
+\item Type d’entreprise si c’en est une
+\end{itemize}
+Après avoir effectué des recherches, j’ai conclu que la meilleure des façons de dialoguer entre un fichier Excel et une base de données étaient les fichiers CSV. Ce sont des fichiers qui contiennent sur chaque ligne des caractères séparés par une virgule, correspondant aux différentes colonnes du fichier Excel.
+Cependant, le type d’entreprise, l’adresse, le numéro de téléphone du contact, son mail, étaient stockés sous la forme d’une chaîne de caractère appelé tableau sérialisé que j'ai un peu réduit (voir ci-dessous).
 
-Les données utiles transitent entre ces deux parties sous le format JSON qui est un format de plus en plus courant de nos jours depuis l’apparition de Node.JS. En effet, ce format permet de communiquer facilement entre le client et le serveur car ils sont tous les deux basés sur du javascript, et ce dernier arrive très bien à comprendre le JSON et utiliser le contenus des données en tant que variables. Cette étape de communication est donc très rapide et ne nous encombre pas avec des fonctionnalités de parsing à rajouter.
+\clearpage
 
 
-\section{Répartition des tâches}
+\begin{lstlisting}[caption={Tableau sérialisé}, label={lst:serializedTab}]
+a:29:{
+s:8:"subtitle";
+s:10:"IMPRIMERIE";
+s:12:"featuredItem";
+s:1:"0";
+s:10:"headerType";
+s:3:"map";
+s:11:"headerImage";
+s:0:"";
+s:12:"headerHeight";
+s:0:"";
+s:3:"map";
+	a:7:{
+		s:7:"address";
+		s:33:"5 Rue De Valence 57150 CREUTZWALD";
+		s:8:"latitude";
+		s:10:"49.1910937";
+		s:9:"longitude";
+		s:9:"6.6915101";
+		s:10:"streetview";
+		s:1:"0";
+		s:9:"swheading";
+		s:2:"90";
+		s:7:"swpitch";
+		s:1:"5";
+		s:6:"swzoom";
+		s:1:"1";
+		}
+s:9:"telephone";
+s:10:"0613227870";
+s:19:"telephoneAdditional";
+s:0:"";
+s:5:"email";
+s:22:"gilbert.walding@ffr.fr";
+s:9:"showEmail";
+s:1:"1";
+s:15:"contactOwnerBtn";
+s:1:"0";
+s:3:"web";
+s:0:"";
+s:12:"webLinkLabel";
+s:0:"";
+s:19:"displayOpeningHours";
+s:1:"0";
+...
+s:0:"";
+s:18:"openingHoursSunday";
+s:0:"";
+s:16:"openingHoursNote";
+s:0:"";
+s:14:"displayGallery";
+s:1:"0";
+s:7:"gallery";
+s:0:"";
+s:15:"displayFeatures";
+s:1:"0";
+s:8:"features";
+s:0:"";}
+\end{lstlisting}
 
-La répartition des tâches changeaient de temps en temps pour nous permettre d’avoir une vue globale de l’application. Nous ne voulions pas qu’une seule personne soit au courant d’une seule partie de l’application sans avoir d’idée sur le reste de celle-ci. Nous voulions donc être informés à tout moment de ce qui était fait, et nous avons beaucoup travaillé de paire. Un bon exemple est la réalisation d’une quelconque fonctionnalité. La plupart du temps, nous réfléchissions ensemble sur les informations nécessaires à cette fonctionnalité, puis à une interface qui lui correspondrait. Ensuite les deux parties, application et serveur, étaient codées en parallèle. Enfin, nous faisions la liaison entre les deux et nous corrigions respectivement les erreurs.
+A l’aide de la fonction serialize et de deux fichiers ci-dessous :
 
 
-\section{Technique}
+\begin{lstlisting}[caption={Premier CSV en entrée de mon script}, label={lst:firstEntry}]
+subtitle,featuredItem,headerType,headerImage,headerHeight,map,telephone,telephoneAdditional,email,showEmail,contactOwnerBtn,web,webLinkLabel,displayOpeningHours,openingHoursMonday,openingHoursTuesday,openingHoursWednesday,openingHoursThursday,openingHoursFriday,openingHoursSaturday,openingHoursSunday,openingHoursNote,displaySocialIcons,socialIconsOpenInNewWindow,socialIcons,displayGallery,gallery,displayFeatures,features
+IMPRIMERIE,0,map,,,,0613227870,,gilbert.walding@ffr.fr,1,0,,,0,,,,,,,,,0,1,,0,,0,
 
-Nous avons séparé tout notre code dans 3 gits différents. Ainsi, nous avions un dépôt qui concernait l’application mobile, et un autre concernant le serveur. Nous testions tout d’abord l’application grâce à une sorte d’émulateur offert par ionic qui permet d’ouvrir notre application dans un navigateur web. Cependant, certaines fonctionnalités natives comme la lecture de musique était indisponible durant le test sur navigateur. Il nous fallait forcément tester l’application sur nos téléphones portables. Le fait d’avoir séparer le serveur de l’application mobile nous a permis de déployer le serveur sur un serveur de test afin de l’utiliser avec l’application mobile. De ce fait, notre téléphone pouvait se connecter à ce serveur web car il n’était pas hébergé sur nos ordinateurs, inaccessibles de l’extérieur. Le dernier dépôt quant à lui nous a servi pour l’élaboration du rapport. Il est plus logique de le séparer du reste du code car il ne le concerne pas directement.
+\end{lstlisting}
 
-\begin{wrapfigure}{r}{6cm}
+\begin{lstlisting}[caption={Deuxième CSV en entrée de mon script}, label={lst:secondEntry}]
+address,latitude,longitude,streetview,swheading,swpitch,swzoom
+5 Rue De Valence 57150 CREUTZWALD,49.1910937,6.6915101,0,90,5,1
+\end{lstlisting}
+
+Je suis parvenu à générer le tableau sérialisé final. L’essentiel de mon travail a été d’écrire des scripts php qui lisaient des fichiers CSV pour faire des insertions dans la base de données.
+
+\section{Résultats obtenus}
+Au final, et avec la contraite de temps d'une semaine que je me suis fixée, pour pouvoir réaliser les autres tâches j'ai uniquement réussi à remplir les tables posts et post\_meta, il me manquait encore 3 autres tables minimum pour terminer le travail. Mon chef de projet a donc informé au client qu’il aurait fallu beaucoup plus de temps et quelqu’un de très expérimenté en SQL pour réaliser cette tâche en entier.
+
+\chapter{Le projet du château de Saint Sixte}
+
+\section{Problématique}
+Un châtelain possédant un château à Freistroff réalisait souvent des visites de son château pour des classes des différentes écoles de Moselle, et il a décidé de rendre ses visites plus interactives en ajoutant une touche de numérique. En effet, il souhaitait que ses visiteurs puissent se connecter sur un réseau wifi non connecté à internet dans le domaine du château afin d’accéder à un site décrivant les différents lieux cultes du château. Il souhaitait également intégrer un quizz sur ce site mobile avec des questions relatives à la visite. Mon collègue informaticien à donc réalisé un site Wordpress responsive suivant ce cahier des charges, et acheté le matériel nécessaire à l’installation dans le château (Mac pour héberger le site, routeur et antenne wifi longue portée). Le site doit être disponible en français, allemand, et anglais.
+
+\section{Réalisations}
+
+Une de mes premières tâches pour ce projet a été l’ajout d’un bouton page précédente sur chaque page du site à la demande du client. Ensuite, j’ai ajouté les pages relatives aux langues étrangères car celle ci n’étaient pas encore créées. C’est le client lui même qui se chargerait des traductions du contenu. Lors de cette tâche j’ai du éditer des liens qui n’étaient plus adaptés lors de l’ajout des pages allemandes et anglaises (ajout de /en/ ou /de/). Ensuite j’ai fait en sorte que le serveur MAMP installé sur le Mac se lance automatiquement au démarrage grâce à un petit script en AppleScript pour gagner en efficacité et éviter au client de le faire à chaque fois.
+
+
+Une fois le contenu et les pages terminés, il a fallu commencer les tests de connexion au réseau local du Mac avec des téléphones mobiles.
+
+
+\begin{figure}[h]
   \centering
-  %\includegraphics[width=5cm]{figures/tree_app}
-  \caption{Arborescence de l'application}
-  \label{fig:tree-app}
-\end{wrapfigure}
+  \includegraphics[width=18cm]{figures/Montage}
+  \caption{Schéma de l'installation}
+  
+  \label{fig:installation}
+\end{figure}
+
+
+Alors que mes collègues possédant des iPhone ne possédaient aucun problèmes pour se connecter au localhost (à l’adresse IP) du Mac hébergeant le site web, mon téléphone Android ainsi que tous les autres sur cet OS n’y parvenaient pas. Il s'ensuit alors une longue série de tests, de changement de paramètres de configuration du routeur, de l’antenne, mais en vain. Il était impossible de se connecter à un réseau wifi ne possédant pas internet avec un téléphone Android. J’ai donc fait des recherches et trouvé des articles récents expliquant que c’était dû à une mise à jour après la version 5 d’Android : en effet, quand le réseau wifi n’a pas d’accès internet, le téléphone va tenter de se connecter avec le réseau mobile (4G) ce qui est impossible pour atteindre une IP locale. (Voir Webographie)
+
+J’ai également fait des analyses de paquets avec Wireshark car mon téléphone avait bien une IP qui lui était affectée, et en filtrant les échanges avec uniquement mon IP je me suis aperçu que les seuls échanges avec le routeur étaient des protocoles IGMPv2 (Internet Group Management Protocol) et MDNS (Multicast Domain Name System) mais après avoir analysé plus en détail le contenu de ces paquets il s’est avéré qu’il s’agissait uniquement des tentatives de connexion au PlayStore dans le but des vérifications des mise à jour des applications. J’ai posé mon problème sur le site StackoverFlow et l’unique solution que j’ai reçue était d’utiliser l’outil Ngrok. C’est un petit script qui réalise un tunnel à partir d’internet vers le port de mon choix sur ma machine locale. Plus concrètement, il permet de partager son localhost à des utilisateurs lambdas via un URL généré automatiquement et hébergé en ligne. Or, à chaque fois que le script est lancé, l’URL est différent, de plus, le but était d’être indépendant d'internet. 
+
+
+Après avoir passé plusieurs jours dans les recherches et sans obtenir de réponses, mon chef de projet a proposé de ramener le matériel à un employé de l’entreprise qui avait vendu l’antenne wifi, spécialiste du réseau. Après quelques jours, j’ai récupéré le matériel et appris qu’il avait configuré un serveur DNS sur une machine virtuelle Debian. (Voir Webographie)
+
+
+Il m’a expliqué qu’il suffisait de lancer la machine virtuelle pour que tout fonctionne. Or, cela n’a pas fonctionné directement, j’ai donc utilisé Teamviewer couplé au téléphone pour tenter de régler le soucis. Il s’est avéré qu’il avait oublié de supprimer des anciens fichiers après ses premiers tests qui étaient en conflit avec la configuration actuelle.
+
+
+Une fois ce problème résolu, j’ai testé la connexion avec mon téléphone Android, mais cela fonctionnait uniquement avec un port Ethernet du routeur connecté à internet. En rappelant l’expert en réseau, je l’ai informé sur les recherches que j’ai faites et il n’a pas été étonné par mes trouvailles. Je l’ai donc expliqué à mon chef de projet, et après concertation nous avons dû imposer une connexion internet au client pour un fonctionnement correct de l’installation.
+
+
+Enfin, quelques jours plus tard, je suis allé au château avec mon collègue pour installer tout le matériel, nous avons pu nous connecter à une livebox. Après un problème de conflit d’IP (les IP du Mac, routeur et de l’antenne étant manuelles et initialement prévues en 192.168.1.1 pour un fonctionnement hors ligne) nous avons changé rapidement l’IP de la livebox, et pu faire fonctionner le site internet sur tous les types de mobile se connectant à l’antenne wifi.
+
+
+\section{Résultats obtenus}
+C’était le projet auquel j’ai participé pendant le plus de temps, le fil conducteur de mon stage et j’ai pu participer au dénouement de celui ci peu avant la fin de mon stage, ce qui m’a vraiment soulagé après les déboirs et incompréhensions que j’ai rencontrés lors de mes recherches et tests. Il m’a permis de me rendre compte des contraintes techniques qu’il fallait parfois imposer à un client, et des imprévus que l’on peut rencontrer lorsqu’on fait une installation en réseau local, en effet mes collègues n’avaient pas pensé passer autant de temps sur ce projet. Cela a été aussi un bon moyen pratique d’améliorer mes connaissances en réseau.
+
+\chapter{Etude dans le but d’une éventuelle migration de logiciel CRM}
+
+\section{Problématique}
+
+Mon entreprise possède un logiciel CRM (Costumer Relationship Management) appelé Logipub depuis maintenant plus de 20 ans, cependant, aucune mise à jour n’a été effectuée depuis une bonne dizaine d’années, et l’entreprise qui vend le logiciel n’est plus très à l’écoute de ses clients aujourd’hui. Par conséquent, il m’a été demandé de faire une étude des logiciels CRM existants, et plus précisément ceux gratuits et opensource. Le logiciel CRM permet à l’entreprise :
+\begin{itemize}
+\item la gestion des dossiers
+\item la gestion des flux clients (devis, bons de livraison, factures)
+\item la gestion des flux fournisseurs (demandes de prix, bons de commande, factures d’achat)
+\item la gestion des flux internes (frais, temps passés sur un projet)
+\item d’avoir un tableau de bord
+\item le transfert en comptabilité
+\item d’avoir un planning de production
+\item d’avoir un intranet
+\item d’avoir un agenda.
+\end{itemize}
+Ce logiciel tourne en version serveur un PC et les Mac de mes collègues possèdent des licences clients.
+
+
+\section{Réalisations}
+\subsection{Récupération des données}
+Un des premiers problèmes a été la récupération des données existantes (factures, contacts, devis, bons de livraison…) sur la base de données actuelles. C’est une base de données 4D, technologie apparue il y a plus de 25 ans, et qui aujourd’hui a une bien plus petite communauté de développeurs que SQL par exemple. Mon collègue Benoît m’a donc fourni tous les fichiers en sa possession sur le serveur contenant les données importantes. Lors de mes premières recherches assez générales, je me suis aperçu que très peu de forum relataient ce genre de récupération, ou alors les topics dataient d’il y a plus de 7 ans.
+Ensuite, je me suis intéressé aux fichiers que j’avais en ma possession : les extensions étaient .4DD .4DR .4DS ; or voici les informations que j’ai trouvées sur internet :
+\begin{itemize}
+\item 4DB = c'est le "source" du développement, à conserver précieusement (structure de la base de données, écrans, code…)
+\item 4DC = source compilée, il n'y a rien à en faire car le source n'est plus accessible, sert juste au déploiement
+\item 4DD = données, tout le travail de saisie des utilisateurs, à garder 
+\item 4DR = ressources du 4DD, aucun intérêt
+\end{itemize}
+J’avais donc bien un fichier de données, mais pas le fichier source qui permet d’avoir la structure de la base de données. J’ai donc relayé l’information à mon collègue en lui suggérant qu’il était peut être en la possession de la société qui leur a vendu le logiciel.
+
+
+\subsection{Comparatif des solutions actuelles de logiciels CRM}
+
+Ensuite, j’ai créé le tableau ci-dessous qui récapitule et compare les recherches que j’ai faites sur internet au sujet des logiciels gratuits existants. Il faut savoir que les certains ERP (Enterprise Resource Planning) sont liés aux CRM dans quelques cas : l’unique différence est qu’un CRM est orienté clients et propects, tandis que les ERP sont orientés gestion centralisée entre les différents départements de l’entreprise, mais les deux types de logiciels peuvent avoir des fonctionnalités en commun. (Voir tableaux en Annexe C)
+
+
+\subsection{Installation et tests du logiciel Dolibarr}
+
+Lors de ma première réunion à ce sujet avec Sébastien le chef de projet, il m’avait parlé de Dolibarr, qui est un CRM gratuit et opensource. Après mon étude comparative, nous en sommes venus à la conclusion que c’était celui le plus complet, il m’a donc proposé de le tester sur mon Mac.
+
+
+J’ai donc téléchargé un installateur qui fonctionne comme MAMP, car cet ERP est composé d’un serveur Apache et d’une base de données MySQL. Après configuration de la base de données, et du logiciel, auquel on accède via son localhost, j’ai commencé à prendre en main le logiciel (customisation de l’apparence du logiciel, création de clients, de factures, devis… Voir Annexe D). J’ai ensuite mis du temps à comprendre comment mettre à jour le logiciel ; le Mac étant assez ancien, l’installateur n’était disponible que dans une ancienne version. Il fallait extraire la version suivante de la version installée dans le fichier htdocs de Dolimamp (équivalent de MAMP dont j’ai parlé précédemment) en prenant soin de retirer le fichier install.lock chargé de bloquer les mises à jour inopinées par des utilisateurs ayant accès au dossier puis se reconnecter à son localhost pour avoir accès à la page de mise à jour. J’ai donc fait plusieurs mises à jour successives de la version 3.1 à 3.5 (une par une, 3.1 → 3.2 etc...). Il s’est avéré que la version 3.5 était la dernière compatible avec ma version de PHP, et que cette version de PHP était la dernière compatible avec mon Mac, je me suis donc arrêté à la 3.5.
+
+
+\subsection{Comparatif entre Logipub et Dolibarr}
+
+Une fois le logiciel Dolibarr testé, on m’a fait essayé le logiciel Logipub que mes collègues utilisaient. Ensuite, on m’a demandé de réaliser un comparatif des fonctionnalités entre Logipub et Dolibarr, que vous pouvez voir sur ce tableau :
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=13cm]{figures/dolibarrVSlogipub}
+  \caption{Comparatif Logipub/Dolibarr}
+  
+  \label{fig:comparatif}
+\end{figure}
+
+
+\subsection{Que se passera t’il dans le cas d’un crash du logiciel Logipub ou d’un serveur ?}
+
+Alain, un des dirigeants m’a demandé de rédiger un rapport pour savoir ce qu’il se passerait si le logiciel Logipub ou son serveur crashait. Je suis donc allé demander des informations à mon collègue responsable de l’informatique pour obtenir davantage de précisions sur l’installation. J’ai donc appris que le serveur Xserve qui sert actuellement à l’échange des données lors des projets était équipé de la technologie RAID 1 (Redundant Array of Independent Disks) qui consiste à utiliser 2 disques durs sur les 4 existants afin d’avoir une copie permanente de ce qui est effectué, cela permet d’assurer la sécurité des données en cas de dégradation d’un disque.
+
+
+Par contre, il a été convenu avec mon collègue informaticien que si le logiciel Logipub venait à crasher, plus rien ne pouvait fonctionner. C’est pourquoi j’ai donc conseillé d’essayer de contacter encore et encore l’entreprise qui a vendu ce logiciel pour le mettre à jour sur un serveur plus récent équipé de cette technologie RAID avec une version plus récente du logiciel. J’ai également cité les meilleures façons d’anticiper un tel problème, il faut :
+\begin{itemize}
+\item faire des sauvegardes
+\item faire de la maintenance régulière
+\item avoir du matériel de remplacement
+\end{itemize}
+afin d’éviter :
+\begin{itemize}
+\item une perte de rentabilité
+\item une perte de clients
+\item une perte d’argent.
+\end{itemize}
+
+\section{Résultats obtenus}
+
+Après avoir faits ces multiples recherches, j’ai réalisé un mail bilan avec les solutions que je pouvais proposer que voici :
+
+\begin{itemize}
+\item Contacter Open Mac pour leur demander s’ils peuvent fournir le fichier structure. Cela ne résoudra pas le problème d’export et de sécurisation, il sera sûrement alors uniquement possible de “visionner” la base de données. Le mieux étant de leur demander s’ils ont déjà effectué une telle migration (vers base de données MySQL) par le passé, car aucune recherche Google spécifique à “migration base de données logipub” n’aboutit. Par contre une mise à jour de Logipub ne résoudra pas ce problème d’export.
+\item Contacter 4D pour leur poser le problème, avec les outils que nous possédons et vers où nous voudrions nous diriger.
+\item Opter pour une mise à jour de Logipub en essayant (encore) de contacter Open Mac et ne pas s’orienter vers Dolibarr.
+\item Entrer les données à la main sur Dolibarr me paraît être une tâche incommensurable. Pour faire une automatisation de cette tâche il faudrait auparavant résoudre les problèmes d’export de l’ancienne base de données cités précédemment.
+\end{itemize}
+
+\chapter{Développement d’un email responsive design}
+
+\section{Problématique}
+Une des activités de l’entreprise est de réaliser des campagnes d’emailing de publicité, c’est à dire qu’ils envoient grâce à un logiciel qu’il lit une base de données d’adresses email une grosse quantité d’emails pour des clients. Lors de mon stage, un des clients a demandé s’il était possible d’avoir un mail qui serait responsive c’est à dire où il n’y aurait pas besoin de zoomer lorsqu’on est sur un smartphone et qui s'adapterait à l’écran. C’est quelque chose qui n’avait jamais été fait auparavant par mes collègues, je me suis donc proposé de faire un essai et de leur montrer ce qui était faisable.
+
+\section{Réalisations}
+
+Il faut savoir qu’une publicité par email est tout simplement une page HTML accompagnée de propriétés CSS.
+J’ai donc téléchargé un template gratuit de mail responsive pour voir comment cela fonctionnait. L’astuce principale est d’utiliser des emboîtements de tableaux pour que si la page sur laquelle on affiche le mail est trop petite, le tableau qui est a droite passe en dessous.
+On m’a donc fourni un premier mail en format HTML assez simple pour me faire la main et j’ai réussi à faire en sorte qu’il soit responsive.
+Ensuite, on m’a donné le fichier Photoshop du mail du client qui aurait souhaité avoir une version responsive car il n’y avait pas encore de version HTML, ainsi que tous les visuels et la charte graphique (polices, couleurs). J’ai donc fait en sorte de reproduire dans le moindre détail cette image issue de Photoshop sur ma version HTML, que j’ai adaptée pour que ce soit responsive. Une autre astuce de celle des tableaux sont les medias queries (voir exemple ci-dessous) : ils permettent de définir des propriétés CSS pour une certaines largeurs d’écran. La plupart du temps je m’en suis servi pour qu’une div HTML prenne la largeur entière de l’écran une fois que la taille de l’écran est inférieure à la largeur du mail. 
 
 \newpage
-Le dossier principal concernant le développement est le dossier www, car il contient tous les fichiers nous permettant de donner vie à l’application. Les autres dossiers sont principalement là pour faire marche de manière général ionic et les différents plugins qui ont pu être ajoutés. Le dossier templates nous permet de définir toutes les vues de l’application, la forme de celle-ci. Ainsi, toutes les pages visibles par l’utilisateur sont dans ce dossier. Le dossier js nous permet quant à lui de définir les différentes actions associés à ces vues, c’est-à-dire tous les contrôles disponibles, le fond de l’application. Les deux parties sont liés dans les templates. Nous pouvons définir pour chaque boutons quelle est la fonction qui sera exécuté lors du clic sur celui-ci. Ainsi, lorsque qu’un utilisateur réalise une action, une fonction contenu dans fichier du dossier controllers va se mettre en marche. Si celle-ci a besoin de joindre le serveur afin de récupérer des données ou d’en ajouter dans la base de données, elle fera appel à une autre fonction contenu dans le dossier services. Ainsi, l’application est découpée selon le patron de conception Modèle (services) - Vue (templates) - Contôleur (controllers).
+\begin{lstlisting}[language=html, caption={Exemple de media queries}, label={lst:mediaQuery}]
 
-Les dossiers img et css contiennnent les différentes images visibles sur le site, ainsi que les éléments de design spécifiés en CSS. Le fichier index.html contenu à la racine du dossier www permet d’inclure tous les fichiers que nous avons réalisé dans tous les autres dossier et ainsi lier l’application ensemble. Celui-ci définit également les menus permettant d’accéder au vue.
-\newpage
+@media only screen and (max-width: 840px) {
 
+	div[class="column"] {
+		 width: auto!important; 
+		 float:none!important;
+		 padding-left: 20px!important;
+	 	 padding-right: 20px!important;
+		 padding-bottom: 0px!important;
+	 }
+	  
+	 table[class="responsive"]{
+		 padding-bottom: 15px!important;
+	 }
+}
 
-\begin{wrapfigure}{r}{6cm}
-  \centering
-  %\includegraphics[width=5cm]{figures/tree_server}
-  \caption{Arborescence du serveur}
-  \label{fig:tree-server}
-\end{wrapfigure}
-Le dossier templates corresponds au dossier www qui se situe dans l’arborescence de l’application. Il est constitué des mêmes fichiers et du même fonctionnement et ne sera pas donc plus explicité ici.
+\end{lstlisting}
 
-Le dossier config contient les différents fichiers de configuration. C’est-à-dire un fichier comportant les différents paramètres d’accès pour la connexion à la base de données. Il contient un fichier “router” définissant toutes les routes accessibles dans l’API. Chaque route est liée à une fonction d’un contrôleur qui va effectuer le traitement des données envoyées. Chacune des routes possède un paramètre indiquant si oui ou non l’utilisateur doit être authentifié pour y accéder, nous permettant de couper correctement l'accès au personnes non autorisées. Ces routes nous permettent donc de bien structurer notre application pour la rendre la plus propre possible.
+\section{Résultats obtenus}
 
-Du fait que le serveur soit une API REST le serveur ne prend que les parties Modèle (models) et Contrôleur (controllers) du patron de conception MVC. Le dossier models définit les différents objets que nous auront besoin de stocker. Dés que nous lançons le serveur pour la première fois, Sequelize va parcourir ces fichiers pour créer les tables de la base de données correspondantes à chacun des objets. C’est fonctionnalité nous est très utile lors du développement car nous n’avons pas à se soucier de la synchronisation de nos deux bases de données, et également lors du déploiement sur un serveur.
-
-Les contrôleurs quant à eux vont recevoir la requête du client, qui est passée par les routes, et aura la possibilité de récupérer les paramètres de celle-ci. Une vérification de ces paramètres va être effectuée afin d’être sûr qu’ils sont corrects. Par la suite, il va traiter ces paramètres, soit en faisant une recherche, soit en insérant des données dans la base. Par la suite, il va renvoyer une réponse qui corresponds à ce que le client attends, comme par exemple une liste d’objets qui seront affichés.
-
-\chapter{Solution proposée}
-Quand l'utilisateur lance l'application, il va arriver sur l'interface ci-contre. Il pourra alors choisir de s'inscrire s'il n'a pas déjà un compte, ou de se connecter à un compte existant.
-
-\begin{figure}[h]
-  \centering
-  %\includegraphics[width=4cm]{figures/accueil}
-  \caption{Accueil}
-  \label{fig:accueil}
-\end{figure}
-Si il choisi de s'inscrire, il pourra alors entrer un login, son adresse email pour pouvoir être contacté par la suite s'il poste des commentaires, et son mot de passe ainsi que la confirmation de celui-ci afin de s'assurer qu'il ne s'est pas trompé en l'écrivant. En s'inscrivant, le serveur va créer son compte et le connecter directement après.
+On peut voir les résultats que j’ai obtenus ci-dessous : 
 
 \begin{figure}[h]
   \centering
-  %\includegraphics[width=4cm]{figures/inscription}
-  \caption{Inscription}
-  \label{fig:inscription}
+  \includegraphics[width=13cm]{figures/aje1}
+  \caption{Version PC : première partie}
+  \label{fig:aje1}
 \end{figure}
-\newpage
-Si l'utilisateur choisit de se connecter, il pourra entrer son login ainsi que son mot de passe. Une fois connecté, il n'auras plus besoin de se connecter à chaque fois qu'il lance l'application et pourra également y accéder sans avoir accés à Internet.
 
 \begin{figure}[h]
   \centering
-  %\includegraphics[width=4cm]{figures/connexion}
-  \caption{Connexion}
-  \label{fig:connexion}
+  \includegraphics[width=13cm]{figures/aje2}
+  \caption{Version PC : deuxième partie}
+  \label{fig:aje2}
 \end{figure}
-Une fois connecté, l'utilisateur arrive sur la liste des actualités. Celles-ci sont créées par l'administrateur, c'est à dire notre encadrant.
 
 \begin{figure}[h]
   \centering
-  %\includegraphics[width=4cm]{figures/news}
-  \caption{Actualités}
-  \label{fig:news}
+  \includegraphics[width=13cm]{figures/aje3}
+  \caption{Version PC : troisième partie}
+  \label{fig:aje3}
 \end{figure}
-\newpage
-Il pourra ensuite aller sur la liste des packs de leçons, lui permettant de choisir un pack gratuit qu'il débloque par défaut, ou de parcourir les différents packs payants qui sont disponibles et les acheter s'ils le désirent.
 
-\begin{figure}[h]
-  \centering
-  %\includegraphics[width=4cm]{figures/packs}
-  \caption{Liste des packs de leçons}
-  \label{fig:packs}
+\begin{figure}[!htb]
+\minipage{0.32\textwidth}
+  \includegraphics[width=\linewidth]{figures/aje_mobile1}
+  \caption{Version mobile : première partie}\label{fig:aje_mobile1}
+\endminipage\hfill
+\minipage{0.32\textwidth}
+  \includegraphics[width=\linewidth]{figures/aje_mobile2}
+  \caption{Version mobile : deuxième partie}\label{fig:aje_mobile2}
+\endminipage\hfill
+\minipage{0.32\textwidth}%
+  \includegraphics[width=\linewidth]{figures/aje_mobile3}
+  \caption{Version mobile : troisième partie}\label{fig:aje_mobile3}
+\endminipage
 \end{figure}
-Il peut également aller sur la page de stats afin de renseigner son objectif à accomplir, c'est à dire un nombre de leçon à faire par jour, par semaine ou par mois, selon son choix.
 
-\begin{figure}[h]
-  \centering
-  %\includegraphics[width=4cm]{figures/stats}
-  \caption{Objectif}
-  \label{fig:stats}
-\end{figure}
-\newpage
 
-\section{Résultats actuels}
+\clearpage
+Mais également à l’URL suivant : http://www.declic-communication.com/sites/aje/ajenews/
 
-Nous disposons actuellement d’un prototype d’application permettant d’écouter des leçons en streaming. Elle permet aussi d’avoir des statistiques par rapport à l’objectif que l’on s’est fixé, afin de se motiver et d’effectuer des leçons régulièrement.
 
-La partie d’administration est composée de la création des différents packs de cours et les cours avec pour information le prix du pack, ainsi que sa disponibilité, le nom du pack, le nom de chaque cours, et leur durée et le fichier audio associé. Il est également possible d’ajouter des actualités qui apparaîtront à tous les utilisateurs lors de leur connexion.
+J’étais plutôt satisfait des résultats que j’ai obtenus, mais j’arrivais à la fin de mon stage donc j’ai passé le flambeau à mon collègue Benoît en lui envoyant les fichiers que j’ai écris.
+Après un test d’emailing avec ce que j’ai réalisé il s’est avéré qu’il y avait encore des modifications car le corps d’un mail doit différer un peu d’une page internet, mais je n’ai pas pu l’aider davantage sur ce problème car mon stage arrivait à sa fin. Ensuite, il se chargera de créer un backoffice en PHP qui va permettre aux clients de eux mêmes réaliser leurs emails responsive en entrant juste les textes et en uploadant les images voulues pour les articles.
 
-Ce projet nous a permis personnellement de mieux utiliser la technologie Ionic et également se spécialiser dans Angular.JS. Nous avons également découvert des outils permettant de gérer au mieux la conception et la réalisation d’un projet, et ainsi de savoir s’organiser et ne pas se perdre dans l’étendu de celui-ci, et dans les contraintes techniques associées.
 
-\section{Perspectives}
+\chapter{Bilan du stage}
+Globalement c’est plutôt un bilan positif que je retiens de ce stage, car il m’a permis de développer un grand nombre de nouvelles compétences, et m’a permis de mieux connaître le monde de l’entreprise. Bien que je ne sois parvenu à la fin d’une de mes tâches, j’ai permis à mon entreprise d’économiser du temps de recherches qui est souvent très difficile à trouver. J’ai réalisé un template d’email responsive qui sera sans doute réutilisé pour les prochaines campagnes d’emailing, et qui sera un plus à proposer pour les clients. J’ai participé activement à l’ensemble du projet sur le château de Saint Sixte, j’ai également réalisé un outil fonctionnel de vérification de sites et l’ai incorporé sur l’intranet de l’entreprise afin qu’il soit accessible de tous. J’ai permis d’informer au mieux les deux co-dirigeants dans l’hypothèse où un serveur ou le logiciel de CRM crashait, et leur ai transmis le fruit de mes recherches en terme de logiciels équivalents existants.
+Cependant, j’ai également réalisé un grand nombre de tâches secondaires qui ont pu s’avérer pratique pour l’entreprise et ma culture personnelle : 
+\begin{itemize}
+\item réalisation de l’arborescence de l’intranet dans le but de supprimer les données vieilles et inutiles
+\item participation à des réunions créativité, débat sur des phrases d’accroche d’affiches dans le cadre du colloque national de l’association jeunes et entreprises : réalisation d’une équation du futur (thème du colloque : Equation du futur : jeunes et emploi) mathématique de façon avoir un sens mathématique (Voir Annexe E)
+\item estimations de biens informatiques dans le but d’un bilan des immobilisations
+\item remise à zéro, nettoyage d’un PC portable pour vente sur leboncoin.fr
+\item vérification du bon fonctionnement d’une galerie photo avant la livraison au client
+\item réalisation d’une liste des anciens sites réalisés par l’entreprise avec une apparence démodée
+\item rédaction d’un procédé pour éditer un fichier PDF gratuitement pour un client
+\item réalisation d’une étude sur les plateformes communautaires (notemment blablacar et airbnb)
+\item questions en anglais à l’auteur d’un thème Wordpress
+\item réalisation d’une étude sur le fonctionnement de Google Search Console.
+\end{itemize}
 
-Les principales perspectives de l’application consiste à développer les différntes fonctionnalités qui ont été imaginées mais qui ne sont pas encore présentes dans celle-ci. Nous pourrions également mettre le prototype à l'essai pour quelques pratiquants afin qu'ils le testent quelques temps pour obtenir des retours et ainsi savoir quelles améliorations nous pourrions faire.
+
+
+\chapter{Conclusion}
+
+Ce stage a été pour moi un bon moyen de découvrir la polyvalence de chacun dans des structures inférieures à 10 personnes, car j’ai été moi même concerné : en effet, ce stage fût un mélange de recherches et de travaux pratiques, d’échanges avec les collègues et d’autonomie, de travaux intra-entreprise et de projets pour les clients. Je trouve que grâce à tout cela, ce stage a été encore plus enrichissant que prévu, car je ne m’attendais pas à tant de diversité dans mes tâches. J’ai pu ainsi améliorer mes compétences en développement web, mais aussi en recherche et développement et en réseau, chose qui aurait été difficile à espérer dans une grosse entreprise ou dans la recherche. J’ai également appris à bien prendre des notes lors des réunions, car lorsqu’on travaille sur plusieurs projets en parallèle il faut éviter de sans cesse questionner ses collègues parce qu’on a oublié quelque chose. Ce stage m’a également permis de me rendre compte du fonctionnement d’une société de services de type agence de publicité quand celle ci arrive à l’heure du numérique. Mais également qu’il faut s’adapter sans cesse aux clients et à la tendance actuelle pour ne pas perdre de clients ni d’efficacité sur le marché.
+
+
+
 
 
 
 
 \listoffigures
 
+
+\chapter*{Glossaire}
+\addcontentsline{toc}{chapter}{Glossaire}
+\textbf{CMS} - (Content Management System) Programme informatique utilisant une base de données et permettant de gérer de A et Z l'apparence et le contenu d'un site web.
+
+\textbf{OVH} - Hébergeur français de sites web.
+
+\textbf{Framework} - Ensemble cohérent de composants logiciels structurels, qui sert à créer les fondations ainsi que les grandes lignes de tout ou d’une partie d'un logiciel (architecture).
+
+\textbf{Opensource} -  Logiciel dont l'accès à son code source est autorisé par son auteur. 
+
+\textbf{FTP} - (File Transfert Protocol) Langage permettant l'échange de fichiers entre un serveur et un client.
+
+\textbf{Sérialisation} - Processus visant à encoder l'état d'un objet qui est en mémoire sous la forme d'une chaîne de caractères.
+
+\textbf{Responsive} - Manière de concevoir un site web pour que son contenu s'adapte automatiquement à la résolution écran du terminal qui est utilisé pour le visionner. 
+
+\textbf{OS} - (Operating System) Logiciel qui commande le matériel informatique physique. 
+
+\textbf{Paquet} - En réseau, le paquet est une unité de transmission utilisée pour communiquer, afin de transmettre un message d'une machine à une autre sur un réseau.
+
+\textbf{Wireshark} - Logiciel libre d’analyse de protocole, ou «packet sniffer », utilisé dans le dépannage et l’analyse de réseaux informatiques, le développement de protocoles, l’éducation et la rétro-ingénierie, mais aussi le piratage.
+
+
+\textbf{Stackoverflow} - Site web proposant des questions et réponses sur un large choix de thèmes concernant la programmation informatique.
+
+\textbf{Machine virtuelle Debian} - Illusion d'un appareil informatique créée par un logiciel d'émulation ; ici c'est le système Debian Linux qui est émulé.
+
+\textbf{Teamviewer} - Logiciel propriétaire de télémaintenance, disposant de fonctions de bureau à distance, de télé-administration, de conférence en ligne et de transfert de fichiers.
+
+\textbf{localhost} - (d'une machine) Domaine de premier niveau réservé désignant l'adresse IP de l'ordinateur sur un réseau local.
+
+\textbf{Backoffice} - Partie du site internet qui n'est visible que par l'administrateur du site et qui permet de gérer le contenu, les fonctionnalités... 
+
+\textbf{SEO} - (Search Engine Optimization)  L'art de positionner un site, une page web ou une application dans les premiers résultats naturels des moteurs de recherche.
+
+\cleardoublepage
+\renewcommand{\thesubsection}{\Roman{subsection}}
+
+\appendix
+\part*{Annexes}
+\addcontentsline{toc}{part}{Annexes}
+\cleardoublepage
+
+\chapter{Annexe : Les grandes étapes pour avoir un site web performant}
+\includepdf[pages={1-2}]{pdf/Processus_site_performant.pdf}
+
+\chapter{Annexe : Processus de vérification des sites}
+\includepdf[pages={1-2}]{pdf/Processus_de_verification_des_sites.pdf}
+
+\chapter{Annexe : Tableaux comparatif des solutions actuelles de logiciels CRM}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=13cm]{figures/compare1}
+  \caption{Tableau comparatif 1}
+  \label{fig:compare1}
+\end{figure}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=13cm]{figures/compare2}
+  \caption{Tableau comparatif 2}
+  \label{fig:compare2}
+\end{figure}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=13cm]{figures/compare3}
+  \caption{Tableau comparatif 3}
+  \label{fig:compare3}
+\end{figure}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=13cm]{figures/compare4}
+  \caption{Tableau comparatif 4}
+  \label{fig:compare4}
+\end{figure}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=13cm]{figures/compare5}
+  \caption{Tableau comparatif 5}
+  \label{fig:compare5}
+\end{figure}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=13cm]{figures/compare6}
+  \caption{Tableau comparatif 6}
+  \label{fig:compare6}
+\end{figure}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=13cm]{figures/compare7}
+  \caption{Tableau comparatif 7}
+  \label{fig:compare7}
+\end{figure}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=13cm]{figures/compare8}
+  \caption{Tableau comparatif 8}
+  \label{fig:compare8}
+\end{figure}
+
+\chapter{Annexe : Exemples de fichiers générés avec Dolibarr}
+\includepdf{pdf/commande_fournisseur.pdf}
+\includepdf{pdf/facture_client.pdf}
+\includepdf{pdf/facture_fournisseur.pdf}
+
+\chapter{Annexe : Equation du futur}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=18cm]{figures/equation_du_futur}
+  \caption{Equation du futur}
+  \label{fig:futurEquation}
+\end{figure}
+
+
+
+\cleardoublepage
+\thispagestyle{empty}
+
+\section*{Résumé}
+\addcontentsline{toc}{chapter}{Résumé}
+Ce document présente le travail que j’ai effectué lors de mon stage de 2ème année à Télécom Nancy. Il s’est déroulé dans l’entreprise Déclic Communication à Saint-Avold, en Moselle et a duré 7 semaines. Mon rapport se divise en plusieurs grandes parties, qui correspondent aux tâches principales que j’ai réalisé. Dans la dernière partie, j’expose le bilan de ce stage ainsi que les difficultés rencontrées.
+Les tâches principales de mon stage ont été les projets suivants : la réalisation d’un processus de vérification des sites réalisés par l’entreprise, des recherches dans le cadre de l’automatisation de mise à jour d’une base de données Wordpress, le projet du château de Saint Sixte, une étude dans le but d’une éventuelle migration de logiciel CRM et le développement d’un email responsive design.
+
+
+{\bf Mots-clés : logiciel CRM, emailing responsive design, installation réseau LAN, mise à jour de BDD Wordpress}
+
+
+\section*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+This document presents the work I did during my 2nd year internship. It took place at the company Declic Communication in Saint-Avold, in Moselle and lasted 7 weeks. My report is divided in several big sections which correspond to the main tasks I realized. In the last section, I will do a review of my internship and talk about the difficulties I met. The main tasks of my internship were : the creation of a verification process for the finished websites, research in automating updates to Wordpress database, a project for the castle of Saint Sixte, a study for a potential migration of CRM software and the development of a responsive design email.
+
+{\bf Keywords : CRM software, responsive emailing, LAN installation, updating Wordpress database}
 
 
 \end{document}

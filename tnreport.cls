@@ -208,7 +208,7 @@
 
   {\bf Nom, prénom : #1}
 
-  {\bf \'Elève-ingénieur(e) régulièrement inscrit(e) en \reportSchoolDiplomaYear{}\up{e} année à \reportSchool{}}
+  {\bf \'Elève-ingénieur(e) régulièrement inscrit(e) en 2\up{e} année à \reportSchool{}}
 
   {\bf Numéro de carte de l'étudiant(e) :} #2
 
@@ -279,7 +279,7 @@
   {\reportProjectCustomer{}}
   {\ifbool{pi}
     {\reportIndustrialCustomer{}}
-  {Stage de fin d'études réalisé dans l'entreprise \reportCompany{}
+  {Stage de deuxième année réalisé dans l'entreprise \reportCompany{}
 
     en vue de l'obtention du diplôme d'ingénieur de \reportSchool{}}}
 \vfill
